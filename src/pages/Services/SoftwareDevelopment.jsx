@@ -35,7 +35,7 @@ const SoftwareDevelopment = () => {
         'custom-erp': {
             title: 'Custom ERP',
             service: {
-                title: "Creating Winning Stories Together",
+                title: "Creating Winning Strategies Together",
                 heading: "Transform Your Business With Custom ERP Solutions",
                 description: "Our ERP software development services offer comprehensive solutions for businesses seeking to streamline operations, enhance efficiency, and drive growth. Our expert team designs, develops, and implements tailored Enterprise Resource Planning systems that integrate core business functions, such as finance, HR, supply chain management, and customer relationships, into a unified platform."
             },

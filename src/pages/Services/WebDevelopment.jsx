@@ -442,11 +442,11 @@ const WebDevelopment = () => {
         }
     ]
 
-    const [activeTab, setActiveTab] = useState(Object.keys(tabsData)[0] || '')
+    const [activeTab, setActiveTab] = useState('custom-web-design')
 
     useEffect(() => {
         const service = new URLSearchParams(window.location.search).get('service')
-        if (service) {
+        if (service && tabsData[service]) {
             setActiveTab(service)
         }
     }, [])
@@ -465,13 +465,14 @@ const WebDevelopment = () => {
             <div data-aos="fade-up">
                 <TrustedBy />
             </div>
-            <div data-aos="fade-up">
-
+            <div data-aos="fade-up" data-aos-once="true">
                 <ServiceTabs headData={headData} tabsData={tabsData} activeTab={activeTab} setActiveTab={setActiveTab} isEqualBox={true} />
             </div>
-            <div data-aos="fade-up">
-                <ServiceSteps stepsData={stepsData[activeTab]} />
-            </div>
+            {stepsData[activeTab] && (
+                <div data-aos="fade-up">
+                    <ServiceSteps stepsData={stepsData[activeTab]} />
+                </div>
+            )}
             <div data-aos="fade-up">
                 <Projects data={projectsData} headData={projectHeadData} showAvatars={true} />
             </div>
@@ -487,4 +488,5 @@ const WebDevelopment = () => {
     )
 }
 
+export default WebDevelopment
 export { WebDevelopment }

@@ -247,7 +247,7 @@ const DigitalMarketing = () => {
     }
 
     const essentianlsData = {
-        pill: "Creating Winning Stories Together",
+        pill: "Creating Winning Strategies Together",
         title: "POWER UP YOUR ",
         highlightText: "SOCIAL MEDIA GAME",
         description: "Boost your brand’s presence with engaging content, smart strategies, and consistent growth across all major platforms. We turn followers into loyal customers through impactful social media marketing."

@@ -86,8 +86,8 @@ const SoftwareDevelopment = () => {
                     </Slider>
                 </div>
 
-                <a href="/portfolio/our-portfolio" className="btn-white w-fit mx-auto px-5">
-                    View All Projects
+                <a href="/portfolio/software-development" className="btn-white w-fit mx-auto px-5">
+                    View More Software Projects
                 </a>
             </div>
         </div>

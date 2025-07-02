@@ -40,34 +40,34 @@ const Projects = ({ className, headData = {
         <section className="projects-section">
             <div className="project-inner overflow-hidden">
                 <div className="container">
-                    <div className="projects-header">
+                    <div className="projects-header" data-aos="fade-up" data-aos-duration="1000">
                         <div>
-                            <div className="projects-badge">
+                            <div className="projects-badge" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                                 <img src="/images/flower-orange.svg" alt="" className="flwr-orange" />
                                 <span>{headData?.title}</span>
                             </div>
-                            <h2>{headData?.heading}</h2>
-                            <p className='max-w-[690px]'>{headData?.description}</p>
+                            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">{headData?.heading}</h2>
+                            <p className='max-w-[690px]' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">{headData?.description}</p>
                         </div>
-                        <div className='flex flex-col items-end'>
+                        <div className='flex flex-col items-end' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                             {
                                 showAvatars && (
-                                    <div className="flex projects-avatar">
-                                        <img src='/images/headerUser.png' />
-                                        <img src='/images/headerUser-2.png' />
-                                        <img src='/images/headerUser-3.png' />
-                                        <img src='/images/headerUser-4.png' />
+                                    <div className="flex projects-avatar" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
+                                        <img src='/images/headerUser.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800" />
+                                        <img src='/images/headerUser-2.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="900" />
+                                        <img src='/images/headerUser-3.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1000" />
+                                        <img src='/images/headerUser-4.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="1100" />
                                     </div>
                                 )
                             }
-                            <button className="view-all-btn w-fit">View All Projects</button>
+                            <a href="/portfolio" className="view-all-btn w-fit" data-aos="fade-left" data-aos-duration="800" data-aos-delay="800">View All Projects</a>
                         </div>
                     </div>
 
-                    <div className="projects-slider w-[2490px]">
+                    <div className="projects-slider w-[2490px]" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
                         <Slider {...sliderSettings}>
-                            {data?.map((project) => (
-                                <div key={project.id} className="project-slide">
+                            {data?.map((project, index) => (
+                                <div key={project.id} className="project-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay={index * 100}>
                                     <ProjectCard project={project} />
                                 </div>
                             ))}

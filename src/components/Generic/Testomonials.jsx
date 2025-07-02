@@ -115,27 +115,33 @@ const Testomonials = () => {
     return (
         <div className="testimonials">
             <div className="container">
-                <div className="head-cont">
-                    <div className="head-pill">
+                <div className="head-cont" data-aos="fade-up" data-aos-duration="1000">
+                    <div className="head-pill" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         Testimonials
                     </div>
-                    <h2 className="head-h2">
+                    <h2 className="head-h2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         WHAT OUR <span className="text-orange">CLIENTS SAYS</span>?
                     </h2>
                 </div>
-                <div className="relative md:mt-12 mt-5">
+                <div className="relative md:mt-12 mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                     {/* Navigation Arrows */}
                     <button
                         onClick={prevSlide}
-                        className="absolute md:-left-10 left-2  -translate-y-1/2 z-10 testimonial-arrow"
+                        className="absolute md:-left-10 left-2  -translate-y-1/2 z-10 testimonial-arrow smooth-hover pulse-animation"
+                        data-aos="fade-right"
+                        data-aos-duration="800"
+                        data-aos-delay="800"
                     >
                         <FaArrowLeftLong />
                     </button>
 
                     <button
                         onClick={nextSlide}
-                        className="absolute md:-right-10 right-2 -translate-y-1/2 z-10 testimonial-arrow"
+                        className="absolute md:-right-10 right-2 -translate-y-1/2 z-10 testimonial-arrow smooth-hover pulse-animation"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                        data-aos-delay="800"
                     >
                         <FaArrowRightLong />
                     </button>

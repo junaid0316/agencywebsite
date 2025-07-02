@@ -1,2 +1,6 @@
 export * from './Portfolio'
 export * from './OurPortfolio'
+export * from './WebDevelopmentPortfolio'
+export * from './DigitalMarketingPortfolio'
+export * from './AppDevelopmentPortfolio'
+export * from './SoftwareDevelopmentPortfolio'

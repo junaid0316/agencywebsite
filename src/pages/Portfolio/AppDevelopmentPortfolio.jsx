@@ -2,15 +2,16 @@ import React from 'react'
 import Navbar from '../../components/Generic/Navbar'
 import ServiceHeader from '../../components/Services/ServiceHeader'
 import TrustedBy from '../../components/Generic/TrustedBy'
+import MobileApps from '../../components/Portfolio/MobileApps'
 import Footer from '../../components/Generic/Footer'
 import RecentWork from '../../components/Portfolio/RecentWork'
 
-const OurPortfolio = () => {
+const AppDevelopmentPortfolio = () => {
     const data = {
-        pill: "Our Work",
-        titleOrange: "OUR",
+        pill: "App Development Portfolio",
+        titleOrange: "APP DEVELOPMENT",
         title: "PORTFOLIO",
-        description: "Feeling invisible online? A well-designed website gets you noticed and builds trust and credibility. See how we’ve transformed businesses with growth-driven website designs. "
+        description: "Explore our innovative mobile applications that deliver exceptional user experiences. From iOS to Android and cross-platform solutions."
     }
     return (
         <>
@@ -26,12 +27,15 @@ const OurPortfolio = () => {
             <div data-aos="fade-up">
                 <TrustedBy />
             </div>
+            <div data-aos="fade-up" data-aos-delay="100">
+                <MobileApps />
+            </div>
             <div data-aos="fade-up" data-aos-delay="200">
-                <RecentWork />
+                <RecentWork serviceType="app-development" />
             </div>
             <Footer />
         </>
     )
 }
 
-export { OurPortfolio }
+export { AppDevelopmentPortfolio }

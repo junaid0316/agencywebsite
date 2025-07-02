@@ -109,32 +109,35 @@ const WhatWeDo = () => {
     return (
         <div className="what-we-do">
             <div className="container">
-                <div className="head-cont">
-                    <div className="head-pill">
+                <div className="head-cont" data-aos="fade-up" data-aos-duration="1000">
+                    <div className="head-pill" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         See How Our Services Make Us Tick Us
                     </div>
-                    <h2 className="head-h2">
+                    <h2 className="head-h2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         WHAT WE <span className="text-orange">DO BEST</span>
                     </h2>
-                    <p className="text-gray-900 text-center">
+                    <p className="text-gray-900 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         We don't sell our digital marketing and web design services in a hit-or-miss manner. Instead, we cater to your problems through our targeted services, including:
                     </p>
                 </div>
 
                 {/* Main Tabs */}
-                <div className="flex md:flex-wrap md:justify-center gap-4 sm:my-12 my-8 overflow-x-auto sm:pb-0 pb-1.5">
-                    {Object.entries(tabsData).map(([key, tab]) => (
+                <div className="flex md:flex-wrap md:justify-center gap-4 sm:my-12 my-8 overflow-x-auto sm:pb-0 pb-1.5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    {Object.entries(tabsData).map(([key, tab], index) => (
                         <button
                             key={key}
                             onClick={() => {
                                 setActiveTab(key)
                                 setActiveService(Object.keys(tab.images)[0])
                             }}
-                            className={`px-6 py-2 flex gap-2 items-center rounded-full border transition-all duration-300 tab-what ${activeTab === key
+                            className={`px-6 py-2 flex gap-2 items-center rounded-full border transition-all duration-300 tab-what smooth-hover ${activeTab === key
                                 ? 'bg-orange-500 text-white border-orange-500 active-tab-what'
                                 : 'bg-transparent text-gray-900 border-gray-600 hover:border-orange-500 hover:text-orange-500'
                                 }`}
+                            data-aos="zoom-in"
+                            data-aos-duration="600"
+                            data-aos-delay={1000 + (index * 100)}
                         >
                             {
                                 tab.icon
@@ -146,13 +149,16 @@ const WhatWeDo = () => {
                     ))}
                 </div>
 
-                <div className="relative md:block flex gap-10 flex-col">
+                <div className="relative md:block flex gap-10 flex-col" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
                     <div className="what-we-services-tab">
                         {currentTab.services.map((service, index) => (
                             <div
                                 key={service.id}
                                 onClick={() => setActiveService(service.id)}
-                                className={`flex items-center lg:gap-44 md:gap-16 gap-6 md:py-9 py-5 cursor-pointer transition-all duration-300`}
+                                className={`flex items-center lg:gap-44 md:gap-16 gap-6 md:py-9 py-5 cursor-pointer transition-all duration-300 smooth-hover`}
+                                data-aos="slide-up"
+                                data-aos-duration="800"
+                                data-aos-delay={1200 + (index * 150)}
                             >
                                 <div className={`md:text-4xl text-2xl font-space-grotesk ${activeService === service.id ? 'text-white' : 'text-gray-900'}`}>
                                     {String(index + 1).padStart(2, '0')}
@@ -173,8 +179,8 @@ const WhatWeDo = () => {
                     </div>
 
                     {/* Right Side - Image */}
-                    <div className="flex justify-center lg:absolute top-4 right-10 max-w-[450px] md:h-[430px] rotate-3">
-                        <div className="relative">
+                    <div className="flex justify-center lg:absolute top-4 right-10 max-w-[450px] md:h-[430px] rotate-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1400">
+                        <div className="relative float-animation">
                             <img
                                 src={currentImage}
                                 alt={currentTab.services.find(s => s.id === activeService)?.name || 'Service'}

@@ -45,20 +45,34 @@ const Home = () => {
         <>
             <div className='home-page'>
                 <Navbar />
-                <div className="container lg:mt-16 md:mt-12 mt-8">
+                <div className="container lg:mt-16 md:mt-12 mt-8" data-aos="fade-down" data-aos-duration="1200">
                     <HomeHeader />
                 </div>
-                <img src="/images/headerShadow.svg" alt="" className="" />
-                <img src="/images/headerRectangleMd.svg" alt="" className="" />
-                <img src="/images/headerRectangleSm.svg" alt="" className="" />
+                <img src="/images/headerShadow.svg" alt="" className="" data-aos="fade-up" data-aos-delay="200" />
+                <img src="/images/headerRectangleMd.svg" alt="" className="" data-aos="fade-left" data-aos-delay="300" />
+                <img src="/images/headerRectangleSm.svg" alt="" className="" data-aos="fade-right" data-aos-delay="400" />
             </div>
-            <TrustedBy />
-            <AboutUs />
-            <WhatWeDo />
-            <Projects data={projectsData} />
-            <Testomonials />
-            <LetsTalk />
-            <FAQs />
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <TrustedBy />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <AboutUs />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <WhatWeDo />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <Projects data={projectsData} />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <Testomonials />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <LetsTalk />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <FAQs />
+            </div>
             <Footer />
         </>
     )

@@ -1,8 +1,13 @@
 import React from 'react'
 import AboutUsCard from './AboutUsCard'
 import { useState } from 'react'
+import { useCounterAnimation } from '../../hooks/useScrollAnimation'
 
 const AboutUs = () => {
+    // Counter animations for statistics
+    const [projectsRef, projectsCount] = useCounterAnimation(500, { duration: 2500 })
+    const [experienceRef, experienceCount] = useCounterAnimation(8, { duration: 2000 })
+    const [collaborationRef, collaborationCount] = useCounterAnimation(100, { duration: 2200 })
 
     const aboutUsData = [
         {
@@ -30,15 +35,15 @@ const AboutUs = () => {
     return (
         <div className='about-us'>
             <div className="container">
-                <div className="head-cont">
-                    <div className="head-pill">
+                <div className="head-cont" data-aos="fade-up" data-aos-duration="1000">
+                    <div className="head-pill" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         About Us
                     </div>
-                    <h2 className="head-h2">
+                    <h2 className="head-h2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         INSIDE <span className="text-orange">WIZSPEED</span>
                     </h2>
-                    <p className="text-gray-900 text-center">
+                    <p className="text-gray-900 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         Engaging stories resonate with your audience, building loyalty. Let your brand's purpose shine through compelling narratives.
                     </p>
                 </div>
@@ -47,28 +52,30 @@ const AboutUs = () => {
                     {
                         aboutUsData?.map((data, index) => {
                             return (
-                                <AboutUsCard key={index} data={data} />
+                                <div key={index} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 200}>
+                                    <AboutUsCard data={data} />
+                                </div>
                             )
                         })
                     }
                 </div>
 
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-5'>
-                    <div className='abt-insights'>
-                        <h4>500+</h4>
-                        <span className="abt-happy">
+                    <div className='abt-insights' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" ref={projectsRef}>
+                        <h4 data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">{projectsCount}+</h4>
+                        <span className="abt-happy" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                             Projects Delivered
                         </span>
                     </div>
-                    <div className='abt-insights'>
-                        <h4>8+</h4>
-                        <span className="abt-happy">
+                    <div className='abt-insights' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" ref={experienceRef}>
+                        <h4 data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">{experienceCount}+</h4>
+                        <span className="abt-happy" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
                             Years Of Experience
                         </span>
                     </div>
-                    <div className='abt-insights'>
-                        <h4>100+</h4>
-                        <span className="abt-happy">
+                    <div className='abt-insights' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" ref={collaborationRef}>
+                        <h4 data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">{collaborationCount}+</h4>
+                        <span className="abt-happy" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
                             Collaboration
                         </span>
                     </div>

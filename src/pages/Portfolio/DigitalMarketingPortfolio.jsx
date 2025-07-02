@@ -2,19 +2,17 @@ import React from 'react'
 import Navbar from '../../components/Generic/Navbar'
 import ServiceHeader from '../../components/Services/ServiceHeader'
 import TrustedBy from '../../components/Generic/TrustedBy'
-import ShowCase from '../../components/Portfolio/ShowCase'
-import CaseStudies from '../../components/Portfolio/CaseStudies'
+import DigitalMarketingShowcase from '../../components/Portfolio/DigitalMarketingShowcase'
 import Logos from '../../components/Portfolio/Logos'
-import MobileApps from '../../components/Portfolio/MobileApps'
-import SoftwareDevelopment from '../../components/Portfolio/SoftwareDevelopment'
 import Footer from '../../components/Generic/Footer'
+import RecentWork from '../../components/Portfolio/RecentWork'
 
-const Portfolio = () => {
+const DigitalMarketingPortfolio = () => {
     const data = {
-        pill: "Our Work",
-        titleOrange: "OUR",
+        pill: "Digital Marketing Portfolio",
+        titleOrange: "DIGITAL MARKETING",
         title: "PORTFOLIO",
-        description: "Feeling invisible online? A well-designed website gets you noticed and builds trust and credibility. See how we’ve transformed businesses with growth-driven website designs. "
+        description: "Discover our successful digital marketing campaigns that drive real results. From SEO optimization to social media marketing and PPC advertising."
     }
     return (
         <>
@@ -28,13 +26,12 @@ const Portfolio = () => {
                 </div>
             </div>
             <TrustedBy />
-            <ShowCase />
-            <CaseStudies />
+            <DigitalMarketingShowcase />
             <Logos />
-            <MobileApps />
+            <RecentWork serviceType="digital-marketing" />
             <Footer />
         </>
     )
 }
 
-export { Portfolio }
+export { DigitalMarketingPortfolio }

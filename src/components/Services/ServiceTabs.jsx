@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaGlobe } from 'react-icons/fa6'
 
 const ServiceTabs = ({
@@ -17,6 +17,16 @@ const ServiceTabs = ({
 }) => {
 
     const currentTab = tabsData[activeTab]
+
+    // Preload all tab images for instant switching
+    useEffect(() => {
+        Object.values(tabsData).forEach(tab => {
+            if (tab.image) {
+                const img = new Image()
+                img.src = tab.image
+            }
+        })
+    }, [tabsData])
 
     if (!Object.keys(tabsData).length) {
         return <div>No tabs data provided</div>
@@ -44,10 +54,12 @@ const ServiceTabs = ({
                         <button
                             key={key}
                             onClick={() => {
+                                // Force immediate state update
                                 setActiveTab(key)
+                                // Update URL without causing re-render delays
                                 const url = new URL(window.location)
                                 url.searchParams.set('service', key)
-                                window.history.pushState({}, '', url.toString())
+                                window.history.replaceState({}, '', url.toString())
                             }}
                             className={`px-6 py-2 flex gap-2 items-center rounded-full border transition-all duration-300 font-space-grotesk tab-what ${activeTab === key
                                 ? 'bg-orange-500 text-white border-orange-500 active-tab-what '
@@ -89,11 +101,16 @@ const ServiceTabs = ({
                         )}
                     </div>
 
-                    <img
-                        src={currentTab.image}
-                        alt={currentTab.title}
-                        className={`rounded-lg shadow-2xl w-full h-full ${!isEqualBox ? 'lg:col-span-3' : ''} aspect-video lg:order-2 order-1`}
-                    />
+                    <div className={`image-container ${!isEqualBox ? 'lg:col-span-3' : ''} lg:order-2 order-1`}>
+                        <img
+                            key={`tab-image-${activeTab}`}
+                            src={currentTab.image}
+                            alt={currentTab.title}
+                            className="rounded-lg shadow-2xl w-full h-full aspect-video object-cover transition-all duration-200 ease-in-out"
+                            loading="eager"
+                            style={{ opacity: 1 }}
+                        />
+                    </div>
 
 
                 </div>

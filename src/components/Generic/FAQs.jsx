@@ -44,40 +44,46 @@ const FAQs = () => {
 
     return (
         <div className="faqs-section">
-            <div className="container mx-auto px-4">
+            <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-8 items-start">
-                    <div className="lg:col-span-1">
+                    <div className="lg:col-span-1" data-aos="fade-right" data-aos-duration="1000">
                         <div className="head-cont justify-start items-start text-left">
-                            <div className="head-pill">
+                            <div className="head-pill" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                                 <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                                 Faqs
                             </div>
-                            <h2 className="head-h2">
+                            <h2 className="head-h2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                                 FREQUENTLY<br />
                                 ASKED<br />
-                                <span className="text-orange">QUESTIONS</span>
+                                <span className="text-orange gradient-text">QUESTIONS</span>
                             </h2>
-                            <p className="text-gray-400 text-left max-w-md">
+                            <p className="text-gray-400 text-left max-w-md" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                                 If you're new to Scalar or looking to optimize team workflows,
                                 these answers will help you get the most out of our platform.
                             </p>
                         </div>
 
-                        <div className="mt-8">
+                        <div className="mt-8" data-aos="scale-up" data-aos-duration="1000" data-aos-delay="800">
                             <img
                                 src="/images/faqs.jpg"
                                 alt="Team collaboration"
-                                className="rounded-xl aspect-video"
+                                className="rounded-xl aspect-video smooth-hover"
                             />
                         </div>
                     </div>
 
-                    <div className="space-y-4 lg:col-span-2">
+                    <div className="space-y-4 lg:col-span-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                         {faqData.map((faq, index) => (
-                            <Accordion
+                            <div
                                 key={faq.id}
-                                expanded={expanded === index}
-                                onChange={handleChange(index)}
+                                data-aos="fade-up"
+                                data-aos-duration="800"
+                                data-aos-delay={400 + (index * 100)}
+                            >
+                                <Accordion
+                                    expanded={expanded === index}
+                                    onChange={handleChange(index)}
+                                    className="smooth-hover"
                                 sx={{
                                     backgroundColor: expanded === index ? '#FC5E14' : '#1B1B1B',
                                     color: 'white',
@@ -142,6 +148,7 @@ const FAQs = () => {
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
+                            </div>
                         ))}
                     </div>
                 </div>

@@ -6,10 +6,10 @@ const HomeHeader = () => {
     return (
         <div className='home-header'>
             <h1>
-                <span className='header-dot'>
+                <span className='header-dot' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                     DESIGN
                 </span>
-                <span className='flex items-center'>
+                <span className='flex items-center' data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
                     {/* Rotating Circle + Video Behind DEVELOP */}
                     <div className='flex items-center'>
                         {/* Rotating Circle */}
@@ -38,38 +38,38 @@ const HomeHeader = () => {
                         DEVELOP
                     </span>
                 </span>
-                <span className='text-orange header-dot'>
+                <span className='text-orange header-dot' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
                     ADVERTISE
                 </span>
             </h1>
-            <p className='text-gray-800 max-w-[660px] sm:mt-[40px] sm:mb-[50px] mt-[24px] mb-[32px]'>
+            <p className='text-gray-800 max-w-[660px] sm:mt-[40px] sm:mb-[50px] mt-[24px] mb-[32px]' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
                 Engaging stories resonate with your audience, building loyalty. Let your brand's purpose shine through compelling narratives.
             </p>
-            <div className="hdr-btm flex justify-between items-end">
+            <div className="hdr-btm flex justify-between items-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400">
                 <div className="btn-group">
-                    <a href="" className="btn-orange">
+                    <a href="/contact" className="btn-orange" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1600">
                         <span>
                             <FaArrowsAlt />
                         </span>
                         LET'S GET STARTED
                     </a>
-                    <a href="" className="btn-gray">
+                    <a href="" className="btn-gray" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1800">
                         SCROLL TO DISCOVER
                     </a>
                 </div>
-                <div className="right-hdr !hidden md:!inline-block">
+                <div className="right-hdr !hidden md:!inline-block" data-aos="fade-left" data-aos-duration="800" data-aos-delay="1600">
                     <img src="/images/flower-orange.svg" alt="" className="flwr-orange" />
                     <div className="h-px w-[60px] bg-gray-900 my-[3px]"></div>
                     <p className='text-gray-900'>Transform Your Digital <br /> Impact with Wizspeed</p>
                 </div>
             </div>
 
-            <div className="clients !hidden md:!flex">
+            <div className="clients !hidden md:!flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
                 <div className="flex">
-                    <img src='/images/headerUser.png' />
-                    <img src='/images/headerUser-2.png' />
-                    <img src='/images/headerUser-3.png' />
-                    <img src='/images/headerUser-4.png' />
+                    <img src='/images/headerUser.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2200" />
+                    <img src='/images/headerUser-2.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2300" />
+                    <img src='/images/headerUser-3.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2400" />
+                    <img src='/images/headerUser-4.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2500" />
                 </div>
                 <span>
                     <strong>100+</strong>
@@ -77,20 +77,20 @@ const HomeHeader = () => {
                 </span>
             </div>
 
-            <div className="flex md:hidden mt-4 gap-3">
+            <div className="flex md:hidden mt-4 gap-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
                 <div className="clients">
                     <div className="flex">
-                        <img src='/images/headerUser.png' />
-                        <img src='/images/headerUser-2.png' />
-                        <img src='/images/headerUser-3.png' />
-                        <img src='/images/headerUser-4.png' />
+                        <img src='/images/headerUser.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2200" />
+                        <img src='/images/headerUser-2.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2300" />
+                        <img src='/images/headerUser-3.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2400" />
+                        <img src='/images/headerUser-4.png' data-aos="zoom-in" data-aos-duration="600" data-aos-delay="2500" />
                     </div>
                     <span>
                         <strong>100+</strong>
                         Satisficed clients
                     </span>
                 </div>
-                <div className="right-hdr">
+                <div className="right-hdr" data-aos="fade-left" data-aos-duration="800" data-aos-delay="1600">
                     <img src="/images/flower-orange.svg" alt="" className="flwr-orange" />
                     <div className="h-px w-[60px] bg-gray-900 my-[3px]"></div>
                     <p className='text-gray-900'>Transform Your Digital <br /> Impact with Wizspeed</p>
