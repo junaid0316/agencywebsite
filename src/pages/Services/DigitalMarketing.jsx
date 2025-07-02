@@ -253,31 +253,146 @@ const DigitalMarketing = () => {
         description: "Boost your brand’s presence with engaging content, smart strategies, and consistent growth across all major platforms. We turn followers into loyal customers through impactful social media marketing."
     }
 
-    const essentialSteps = [
-        {
-            title: "Scalability",
-            description: "Our solutions are designed to grow with your business, accommodating future needs.",
-            image: "/images/ess-digi-1.svg"
-        },
-        {
-            title: "Security and Reliability",
-            description: "We employ robust security measures to safeguard your customer data, including encryption, firewalls.",
-            image: "/images/ess-digi-2.svg"
+    const essentialSteps = {
+        'social-media-marketing': [
+            {
+                title: "Scalability",
+                description: "Our solutions are designed to grow with your business, accommodating future needs.",
+                image: "/images/ess-digi-1.svg"
+            },
+            {
+                title: "Security and Reliability",
+                description: "We employ robust security measures to safeguard your customer data, including encryption, firewalls.",
+                image: "/images/ess-digi-2.svg"
 
-        },
-        {
-            title: "Seamless Integration",
-            description: "Our POS systems seamlessly integrate with your existing business operations.",
-            image: "/images/ess-digi-3.svg"
+            },
+            {
+                title: "Seamless Integration",
+                description: "Our POS systems seamlessly integrate with your existing business operations.",
+                image: "/images/ess-digi-3.svg"
 
-        },
-        {
-            title: "Real-time Insights",
-            description: "Gain valuable insights into sales performance, inventory levels, and customer behavior.",
-            image: "/images/ess-digi-4.svg"
+            },
+            {
+                title: "Real-time Insights",
+                description: "Gain valuable insights into sales performance, inventory levels, and customer behavior.",
+                image: "/images/ess-digi-4.svg"
 
-        }
-    ]
+            }
+        ],
+        'google-merchant-advertising': [
+            {
+                title: "Campaign Setup",
+                description: "We’ll set up and manage your Google Merchant Advertising campaigns to reach your target audience.",
+                image: "/images/ess-digi-5.svg"
+            },
+            {
+                title: "Bid Management",
+                description: "We’ll optimize your bids to ensure you’re getting the most value for your advertising spend.",
+                image: "/images/ess-digi-6.svg"
+
+            },
+            {
+                title: "Product Feed Optimization",
+                description: "We’ll optimize your product feed to ensure your products are displayed accurately and attractively.",
+                image: "/images/ess-digi-7.svg"
+
+            },
+            {
+                title: "Performance Tracking",
+                description: "We’ll provide detailed analytics and reporting to measure the success of your campaigns.",
+                image: "/images/ess-digi-8.svg"
+
+            }
+        ],
+        'corporate-branding': [
+            {
+                title: "Brand Identity Development",
+                description: "We’ll create a unique brand identity that reflects your values and resonates with your target market.",
+                image: "/images/ess-digi-5.svg"
+            },
+            {
+                title: "Build Brand’s Unique Voice",
+                description: "We’ll develop clear and consistent brand messaging that communicates your value proposition.",
+                image: "/images/ess-digi-6.svg"
+            },
+            {
+                title: "Brand Guidelines",
+                description: "We’ll create comprehensive brand guidelines to ensure consistency across all your marketing materials.",
+                image: "/images/ess-digi-7.svg"
+            },
+            {
+                title: "Consistent Content Curation",
+                description: "Our team excels in creating engaging and valuable content that resonates with your target audience.",
+                image: "/images/ess-digi-8.svg"
+            }
+        ],
+        'local-seo': [
+            {
+                title: "GMB Optimization",
+                description: "Ensure your Google My Business profile is complete, accurate, and optimized with relevant keywords, high-quality images, and customer reviews.",
+                image: "/images/ess-digi-1.svg"
+            },
+            {
+                title: "NAP Consistency",
+                description: "Maintain consistent Name, Address, and Phone number (NAP) information across all online listings, including your website, social media profiles, and local directories.",
+                image: "/images/ess-digi-2.svg"
+            },
+            {
+                title: "Local Citations",
+                description: "Build citations by listing your business on local directories and online platforms. This helps search engines understand your business's location and credibility.",
+                image: "/images/ess-digi-3.svg"
+            },
+            {
+                title: "Ongoing Monitoring and Optimization",
+                description: "Our goal is to keep your website ahead of the competition and ensure long-term success.",
+                image: "/images/ess-digi-4.svg"
+            }
+        ],
+        'pay-per-click-marketing': [
+            {
+                title: "Ad Creation",
+                description: "Our team of experienced copywriters will create compelling ad copy that effectively communicates your value proposition and encourages clicks.",
+                image: "/images/ess-digi-1.svg"
+            },
+            {
+                title: "Keyword Research",
+                description: "We’ll use advanced tools to identify the most relevant keywords for your business and target audience. We’ll also analyze your competitors’ keyword strategies to identify opportunities.",
+                image: "/images/ess-digi-2.svg"
+            },
+            {
+                title: "Tracking",
+                description: "We’ll provide you with detailed analytics and reporting to measure the success of your PPC campaigns and track key metrics such as clicks, impressions, conversions, and cost per acquisition.",
+                image: "/images/ess-digi-3.svg"
+            },
+            {
+                title: "Campaign Setup and Optimization",
+                description: "We’ll set up and launch your PPC campaigns on platforms like Google Ads and Facebook Ads, and continuously monitor and optimize your campaigns.",
+                image: "/images/ess-digi-4.svg"
+            }
+        ],
+        'search-engine-optimization': [
+            {
+                title: "Credibility and Trust",
+                description: "When your website appears on the first page of search results, it automatically instills a sense of credibility and trust in the minds of your potential customers.",
+                image: "/images/ess-digi-1.svg"
+            },
+            {
+                title: "Cost-Effective Marketing",
+                description: "Compared to traditional advertising methods, SEO offers a cost-effective marketing strategy. While it requires an initial investment, the long-term benefits can outweigh the costs.",
+                image: "/images/ess-digi-2.svg"
+            },
+            {
+                title: "Increased Visibility",
+                description: "The higher your website ranks, the more likely it is to attract clicks and organic traffic.",
+                image: "/images/ess-digi-3.svg"
+            },
+            {
+                title: "Credibility",
+                description: "Optimizing your website’s loading speed, mobile responsiveness, and user-friendly navigation positively impacts how visitors interact with your site.",
+                image: "/images/ess-digi-4.svg"
+            }
+        ],
+    }
 
     const [activeTab, setActiveTab] = useState('social-media-marketing');
 
@@ -303,7 +418,7 @@ const DigitalMarketing = () => {
             <TrustedBy />
             <ServiceTabs headData={headData} tabsData={tabsData} activeTab={activeTab} setActiveTab={setActiveTab} headClass="max-w-[880px]" />
             <ServiceSteps stepsData={stepsData[activeTab]} />
-            <ServiceEssentianls headData={essentianlsData} essentialSteps={essentialSteps} />
+            <ServiceEssentianls headData={essentianlsData} essentialSteps={essentialSteps[activeTab]} />
             <div className='lg:pt-[120px] pt-[50px] bg-brand-dark'>
                 <FAQs />
             </div>

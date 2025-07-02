@@ -87,7 +87,7 @@ const MobileApps = () => {
                         ))}
                     </Slider>
                 </div>
-                <a href="/portfolio/our-portfolio" className="btn-white w-fit mx-auto px-5">
+                <a href="/portfolio/mobile-apps" className="btn-white w-fit mx-auto px-5">
                     View All Projects
                 </a>
             </div>

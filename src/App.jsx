@@ -7,9 +7,8 @@ import 'slick-carousel/slick/slick-theme.css'
 import Home from './pages/Home'
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
 import { AppDevelopment, DigitalMarketing, SoftwareDevelopment, WebDevelopment } from './pages/Services'
-import { OurPortfolio, Portfolio } from './pages/Portfolio'
+import { OurPortfolio, Portfolio, SoftwareDevelopmentPage, MobileAppsPage, DigitalMarketingPage } from './pages/Portfolio'
 import MobArchieves from './pages/MobileArchieves/MobArchieves'
-import SoftwareDevelopmentPage from './pages/SoftwareDevelopment/SoftwareDevelopmentPage'
 import Travelica from './pages/MobileArchieves/Travelica'
 import AboutUs from './pages/AboutUs/AboutUs'
 
@@ -25,9 +24,11 @@ function App() {
         <Route path="service/app-development" element={<AppDevelopment />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/our-portfolio" element={<OurPortfolio />} />
+        <Route path="/portfolio/software-development" element={<SoftwareDevelopmentPage />} />
+        <Route path="/portfolio/mobile-apps" element={<MobileAppsPage />} />
+        <Route path="/portfolio/digital-marketing" element={<DigitalMarketingPage />} />
         <Route path="/mob-archieves" element={<MobArchieves />} />
         <Route path="/mob-archieves/travelica" element={<Travelica />} />
-        <Route path="/software-development" element={<SoftwareDevelopmentPage />} />
         <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>

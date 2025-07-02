@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee'
 const TrustedBy = () => {
     const logos = [
         {
-            img: '/images/feedly.png',
+            img: '/images/trust-1.png',
             title: 'feedly',
         },
         {
@@ -12,19 +12,45 @@ const TrustedBy = () => {
             title: 'feedly',
         },
         {
-            img: '/images/feedly.png',
+            img: '/images/trust-2.png',
             title: 'feedly',
         },
         {
-            img: '/images/feedly.png',
+            img: '/images/trust-3.png',
             title: 'feedly',
         },
         {
-            img: '/images/feedly.png',
+            img: '/images/trust-4.png',
+            title: 'feedly',
+        },
+        // {
+        //     img: '/images/trust-5.png',
+        //     title: 'feedly',
+        // },
+        {
+            img: '/images/trust-6.png',
+            title: 'feedly',
+        },
+    ]
+    const logos2 = [
+        {
+            img: '/images/trust-7.png',
             title: 'feedly',
         },
         {
-            img: '/images/feedly.png',
+            img: '/images/trust-8.png',
+            title: 'feedly',
+        },
+        {
+            img: '/images/trust-9.png',
+            title: 'feedly',
+        },
+        {
+            img: '/images/trust-10.png',
+            title: 'feedly',
+        },
+        {
+            img: '/images/trust-11.png',
             title: 'feedly',
         },
     ]
@@ -59,7 +85,7 @@ const TrustedBy = () => {
             </div>
             <div className="">
                 <Marquee speed={20} gradient={false} pauseOnHover={true} autoFill={true} direction='right'>
-                    {logos.map((src, index) => (
+                    {logos2.map((src, index) => (
                         <div key={index} className='trust-img mx-[12px]'>
                             <img
                                 src={src?.img}

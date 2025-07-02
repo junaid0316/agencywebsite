@@ -90,7 +90,7 @@ const CaseStudies = () => {
                 </div>
             </div>
 
-            <a href="/portfolio/our-portfolio" className="btn-white w-fit mx-auto px-5">
+            <a href="/portfolio/digital-marketing" className="btn-white w-fit mx-auto px-5">
                 View All Projects
             </a>
         </div>

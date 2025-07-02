@@ -15,10 +15,15 @@ const WhatWeDo = () => {
             </svg>
             ,
             services: [
-                { id: 'responsive', name: 'Responsive Design', icon: '🎨' },
-                { id: 'frontend', name: 'Frontend Development', icon: '💻' },
-                { id: 'backend', name: 'Backend Development', icon: '⚙️' },
-                { id: 'fullstack', name: 'Full Stack Solutions', icon: '🔧' }
+                { id: 'custom-web', name: 'Custom Web Design', icon: '🎨' },
+                { id: 'animated', name: '3d Animated', icon: '💻' },
+                { id: 'webflow', name: 'Webflow', icon: '⚙️' },
+                { id: 'wix', name: 'Wix', icon: '🔧' },
+                { id: 'shopify', name: 'Shopify', icon: '🔧' },
+                { id: 'e-com', name: 'E-Commerce', icon: '🔧' },
+                { id: 'square-space', name: 'Square Space', icon: '🔧' },
+                { id: 'wordpress', name: 'WordPress', icon: '🔧' }
+
             ],
             images: {
                 responsive: '/images/whatwe.png',
@@ -39,10 +44,13 @@ const WhatWeDo = () => {
             </svg>
             ,
             services: [
-                { id: 'seo', name: 'SEO Optimization', icon: '🔍' },
-                { id: 'social', name: 'Social Media Marketing', icon: '📱' },
-                { id: 'ppc', name: 'PPC Advertising', icon: '💰' },
-                { id: 'content', name: 'Content Marketing', icon: '📝' }
+                { id: 'search-engine-optimization', name: 'Search Engine Optimization', icon: '🔍' },
+                { id: 'social-media-marketing', name: 'Social Media Marketing', icon: '📱' },
+                { id: 'pay-per-click-marketing', name: 'Pay-Per Click Marketing', icon: '💰' },
+                { id: 'content-marketing', name: 'Content Marketing', icon: '📝' },
+                { id: 'google-merchant-advertising', name: 'Google Merchant Advertising', icon: '🛍️' },
+                { id: 'corporate-branding', name: 'Corporate Branding', icon: '🏢' },
+                { id: 'local-seo', name: 'Local SEO', icon: '📍' }
             ],
             images: {
                 seo: '/images/whatwe.png',
@@ -60,11 +68,11 @@ const WhatWeDo = () => {
             </svg>
             ,
             services: [
-                { id: 'custom', name: 'Custom Software', icon: '⚡' },
-                { id: 'saas', name: 'SaaS Applications', icon: '☁️' },
-                { id: 'api', name: 'API Development', icon: '🔗' },
-                { id: 'integration', name: 'System Integration', icon: '🔄' }
+                { id: 'custom-crm', name: 'Custom CRM', icon: '📊' },
+                { id: 'custom-erp', name: 'Custom ERP', icon: '📈' },
+                { id: 'pos-development', name: 'POS Development', icon: '🖥️' },
             ],
+
             images: {
                 custom: '/images/whatwe.png',
                 saas: '/images/whatwe.png',
@@ -89,10 +97,10 @@ const WhatWeDo = () => {
             </svg>
             ,
             services: [
-                { id: 'ios', name: 'iOS Development', icon: '📱' },
-                { id: 'android', name: 'Android Development', icon: '🤖' },
-                { id: 'static', name: 'Static Development', icon: '📄' },
-                { id: 'dynamic', name: 'Dynamic Development', icon: '⚡' }
+                { id: 'ios-app-development', name: 'iOS App Development', icon: '📱' },
+                { id: 'android-app-development', name: 'Android App Development', icon: '🤖' },
+                { id: 'static-app-development', name: 'Static App Development', icon: '📘' },
+                { id: 'dynamic-app-development', name: 'Dynamic App Development', icon: '📲' }
             ],
             images: {
                 ios: '/images/whatwe.png',
@@ -173,14 +181,14 @@ const WhatWeDo = () => {
                     </div>
 
                     {/* Right Side - Image */}
-                    <div className="flex justify-center lg:absolute top-4 right-10 max-w-[450px] md:h-[430px] rotate-3">
+                    <div className="flex justify-center lg:absolute top-0 bottom-0 m-auto pt-5 right-10 max-w-[450px] md:h-[430px] rotate-3">
                         <div className="relative">
                             <img
                                 src={currentImage}
                                 alt={currentTab.services.find(s => s.id === activeService)?.name || 'Service'}
                                 className="rounded-lg shadow-2xl max-w-full h-full transition-all duration-500"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                            <div className="absolute top-0 bottom-0 m-auto inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
                         </div>
                     </div>
                 </div>

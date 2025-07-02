@@ -310,6 +310,10 @@ p {
 }
 
 .trust-img {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
     background-color: #1B1B1B;
     padding: 14px 20px;
@@ -1427,7 +1431,7 @@ nav input {
                 #FFFFFF14 16px,
                 transparent 16px,
                 transparent 28px) 1;
-        transition: border-color 0.4s;
+        transition: border-color 0.8s;
     }
 
     &.first {
@@ -1471,6 +1475,7 @@ nav input {
         color: #fff;
         background-color: #1B1B1B;
         border: 1px solid #FFFFFF14;
+        transition: all 0.8s;
     }
 
     &::before {
@@ -1491,11 +1496,12 @@ nav input {
                 #FFFFFF14 16px,
                 transparent 16px,
                 transparent 28px) 1;
-        transition: border-color 0.4s;
+        transition: 0.8s all ease;
     }
 }
 
 .active-step .left-step::before {
+    transition: 0.8s all ease;
     border-image: repeating-linear-gradient(to bottom,
             #FC5E14 0,
             #FC5E14 16px,
@@ -1504,6 +1510,7 @@ nav input {
 }
 
 .active-step .right-step::before {
+    transition: 0.8s all ease;
     border-image: repeating-linear-gradient(to bottom,
             #FC5E14 0,
             #FC5E14 16px,
@@ -1513,6 +1520,7 @@ nav input {
 
 .active-step {
     .number {
+        transition: 0.8s all ease;
         border: 1px solid #FC5E14;
         background-color: #FC5E14;
         color: #fff;

@@ -1,17 +1,15 @@
 import React from 'react'
-import Slider from 'react-slick'
+import Navbar from '../../components/Generic/Navbar'
+import ServiceHeader from '../../components/Services/ServiceHeader'
+import Footer from '../../components/Generic/Footer'
 
-const SoftwareDevelopment = () => {
-    const settings = {
-        infinite: true,
-        speed: 1200,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        arrows: false,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 4000
+const SoftwareDevelopmentPage = () => {
+
+    const Headdata = {
+        pill: "Our Work",
+        titleOrange: "SOFTWARE",
+        title: "DEVELOPMENT",
+        description: "Feeling invisible online? A well-designed website gets you noticed and builds trust and credibility. See how we’ve transformed businesses with growth-driven website designs. "
     }
 
     const data = [
@@ -52,28 +50,27 @@ const SoftwareDevelopment = () => {
             link: '/digital-marketing-case-study'
         },
     ]
+
     return (
-        <div className='software-development-section overflow-hidden'>
-            <div className="container">
-                <div className="head-cont max-w-[890px]">
-                    <div className="head-pill">
-                        <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                        Software Development
-                    </div>
-                    <h2 className="head-h2">
-                        End-to-End Software Development Excellence marketing <span className="text-orange">case studies</span>
-                    </h2>
-                    <p className="text-gray-900 text-center max-w-[710px] mx-auto">
-                        From architecture to deployment, we turn complex problems into powerful digital tools. Reliable code. Seamless integration. Real-world results.
-                    </p>
+        <>
+            <div className="service-page">
+                <Navbar />
+                <div className="container lg:mt-16 md:mt-12 mt-8">
+                    <ServiceHeader data={Headdata} />
+                    <img src="/images/headerCurveLeft.svg" alt="" className="" />
+                    <img src="/images/headerRectangleMd.svg" alt="" className="" />
+                    <img src="/images/headerRectangleSm.svg" alt="" className="" />
                 </div>
-                <div className="software-development-slider lg:my-16 my-10 w-[2490px]">
-                    <Slider {...settings}>
+            </div>
+
+            <div className="soft-dev-section">
+                <div className="container">
+                    <div className="grid md:grid-cols-2 grid-cols-1 md:gap-16 gap-10">
                         {data.map((item, index) => (
                             <div key={index} className='px-5'>
-                                <div className='software-development-card'>
+                                <div className='software-development-card-sub'>
                                     <img src={item.img} alt={item.title} className='w-full h-full object-cover' />
-                                    <div className='software-development-card-content'>
+                                    <div className='software-development-card-content text-center'>
                                         <h3 className='text-brand-orange font-space-grotesk text-lg lg:mt-7 lg:mb-5 mt-5 mb-3 leading-[100%]'>{item.title}</h3>
                                         <h4 className='font-space-grotesk lg:text-3xl text-2xl text-white'>{item.description}</h4>
                                         {/* <a href={item.link} className='btn-white'>
@@ -83,15 +80,13 @@ const SoftwareDevelopment = () => {
                                 </div>
                             </div>
                         ))}
-                    </Slider>
+                    </div>
                 </div>
-
-                <a href="/portfolio/software-development" className="btn-white w-fit mx-auto px-5">
-                    View All Projects
-                </a>
             </div>
-        </div>
+
+            <Footer />
+        </>
     )
 }
 
-export default SoftwareDevelopment
+export { SoftwareDevelopmentPage }
