@@ -15,23 +15,26 @@ import AboutUs from './pages/AboutUs/AboutUs'
 function App() {
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/service/web-development" element={<WebDevelopment />} />
-        <Route path="/service/software-development" element={<SoftwareDevelopment />} />
-        <Route path="service/digital-marketing" element={<DigitalMarketing />} />
-        <Route path="service/app-development" element={<AppDevelopment />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio/our-portfolio" element={<OurPortfolio />} />
-        <Route path="/portfolio/software-development" element={<SoftwareDevelopmentPage />} />
-        <Route path="/portfolio/mobile-apps" element={<MobileAppsPage />} />
-        <Route path="/portfolio/digital-marketing" element={<DigitalMarketingPage />} />
-        <Route path="/mob-archieves" element={<MobArchieves />} />
-        <Route path="/mob-archieves/travelica" element={<Travelica />} />
-        <Route path="/about-us" element={<AboutUs />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/service/web-development" element={<WebDevelopment />} />
+          <Route path="/service/software-development" element={<SoftwareDevelopment />} />
+          <Route path="service/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="service/app-development" element={<AppDevelopment />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/our-portfolio" element={<OurPortfolio />} />
+          <Route path="/portfolio/software-development" element={<SoftwareDevelopmentPage />} />
+          <Route path="/portfolio/mobile-apps" element={<MobileAppsPage />} />
+          <Route path="/portfolio/digital-marketing" element={<DigitalMarketingPage />} />
+          <Route path="/mob-archieves" element={<MobArchieves />} />
+          <Route path="/mob-archieves/travelica" element={<Travelica />} />
+          <Route path="/about-us" element={<AboutUs />} />
+        </Routes>
+      </BrowserRouter>
+
+    </>
   )
 }
 
