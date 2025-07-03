@@ -181,7 +181,7 @@ const WhatWeDo = () => {
                     </div>
 
                     {/* Right Side - Image */}
-                    <div className="flex justify-center lg:absolute top-0 bottom-0 m-auto pt-5 right-10 max-w-[450px] md:h-[430px] rotate-3">
+                    <div className="flex justify-center lg:absolute top-0 bottom-0 m-auto pt-5 right-10 max-w-[450px] md:h-[430px] md:rotate-3">
                         <div className="relative">
                             <img
                                 src={currentImage}
