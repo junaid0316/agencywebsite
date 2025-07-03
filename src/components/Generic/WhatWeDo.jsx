@@ -188,7 +188,7 @@ const WhatWeDo = () => {
                                 alt={currentTab.services.find(s => s.id === activeService)?.name || 'Service'}
                                 className="rounded-lg shadow-2xl max-w-full h-full transition-all duration-500"
                             />
-                            <div className="absolute top-0 bottom-0 m-auto inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                            <div className="absolute top-0 bottom-0 m-auto inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg max-h-[430px]"></div>
                         </div>
                     </div>
                 </div>
