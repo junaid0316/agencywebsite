@@ -30,9 +30,9 @@ const Portfolio = () => {
             <TrustedBy />
             <ShowCase />
             <CaseStudies />
-            <Logos />
             <MobileApps />
             <SoftwareDevelopment />
+            <Logos />
             <Footer />
         </>
     )

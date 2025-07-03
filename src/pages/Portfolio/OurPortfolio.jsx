@@ -43,7 +43,7 @@ const OurPortfolio = () => {
                     <img src="/images/headerRectangleSm.svg" alt="" className="" />
                 </div>
             </div>
-            <TrustedBy />
+            {/* <TrustedBy /> */}
             <RecentWork />
             <Footer />
         </>
