@@ -17,7 +17,9 @@ function App() {
   useEffect(() => {
     const element = document.querySelector('#smooth-scrollbar');
     if (element) {
-      Scrollbar.init(element);
+      const scrollbarInstance = Scrollbar.init(element);
+      // Store the scrollbar instance globally so other components can access it
+      window.smoothScrollbarInstance = scrollbarInstance;
     }
   }, []);
 

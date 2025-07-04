@@ -72,8 +72,8 @@ const HomeHeader = () => {
                     <img src='/images/headerUser-4.png' />
                 </div>
                 <span>
-                    <strong>100+</strong>
-                    Satisficed clients
+                    <strong>100+</strong>{' '}
+                    Satisfied clients
                 </span>
             </div>
 
@@ -86,8 +86,8 @@ const HomeHeader = () => {
                         <img src='/images/headerUser-4.png' />
                     </div>
                     <span>
-                        <strong>100+</strong>
-                        Satisficed clients
+                        <strong>100+</strong>{' '}
+                        Satisfied clients
                     </span>
                 </div>
                 <div className="right-hdr">
