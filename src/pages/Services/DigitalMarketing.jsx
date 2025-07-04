@@ -256,25 +256,25 @@ const DigitalMarketing = () => {
     const essentialSteps = {
         'social-media-marketing': [
             {
-                title: "Scalability",
-                description: "Our solutions are designed to grow with your business, accommodating future needs.",
+                title: "Drive Targeted Traffic",
+                description: "SMM serves as a powerful driver of targeted traffic to your website by strategically promoting your website.",
                 image: "/images/ess-digi-1.svg"
             },
             {
-                title: "Security and Reliability",
-                description: "We employ robust security measures to safeguard your customer data, including encryption, firewalls.",
+                title: "Increased Visibility",
+                description: "The more visible your brand becomes, the more likely it is to be recognized, trusted, and chosen by potential customers.",
                 image: "/images/ess-digi-2.svg"
 
             },
             {
-                title: "Seamless Integration",
-                description: "Our POS systems seamlessly integrate with your existing business operations.",
+                title: "Build Brand Authority",
+                description: "By sharing informative and valuable content, engaging with your audience, and responding to their inquiries.",
                 image: "/images/ess-digi-3.svg"
 
             },
             {
-                title: "Real-time Insights",
-                description: "Gain valuable insights into sales performance, inventory levels, and customer behavior.",
+                title: "100% Customization",
+                description: "You can collect data for engagement rates, audience demographics, and content performance through analytics.",
                 image: "/images/ess-digi-4.svg"
 
             }
