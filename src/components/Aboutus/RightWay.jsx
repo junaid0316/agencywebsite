@@ -26,7 +26,7 @@ const RightWay = () => {
                         <p className='text-gray-700'>
                             Subscribe to a plan & request as many designs as you’d like.
                         </p>
-                        <img src="/images/abt-2.png" alt="" className='!mt-10' />
+                        <img src="/images/abt-2.webp" alt="" className='!mt-10' />
                     </div>
                     <div className="abt-card pb-6">
                         <h4 className='text-white font-space-grotesk text-2xl font-semibold mb-4'>
@@ -35,7 +35,7 @@ const RightWay = () => {
                         <p className='text-gray-700'>
                             Manage your design board using Trello. View tasks and status.
                         </p>
-                        <img src="/images/abt-3.png" alt="" className='!mt-10' />
+                        <img src="/images/abt-3.webp" alt="" className='!mt-10' />
                     </div>
                     <div className="abt-card pb-6">
                         <h4 className='text-white font-space-grotesk text-2xl font-semibold mb-4'>
@@ -44,7 +44,7 @@ const RightWay = () => {
                         <p className='text-gray-700'>
                             Receive your completed tasks in 2-4 business days.
                         </p>
-                        <img src="/images/abt-4.png" alt="" className='!mt-10' />
+                        <img src="/images/abt-4.webp" alt="" className='!mt-10' />
                     </div>
                 </div>
             </div>

@@ -7,22 +7,22 @@ const Journey = () => {
         {
             title: "Professional Experts",
             description: "Our team of experts is passionate about innovation and is well-versed in emerging problems, enabling you to tackle any problem efficiently.",
-            imgsrc: "/images/about-1.png"
+            imgsrc: "/images/about-1.webp"
         },
         {
             title: "Proven Results",
             description: "Relying on us means getting measurable success and growth. Our experts leave no stone unturned to ensure good returns from investment in your project.",
-            imgsrc: "/images/about-2.png"
+            imgsrc: "/images/about-2.webp"
         },
         {
             title: "High-Quality Services",
             description: "Since we offer tried-and-tested solutions you can find unparalleled services related to digital marketing and web designing under one roof.",
-            imgsrc: "/images/about-3.png"
+            imgsrc: "/images/about-3.webp"
         },
         {
             title: "Customer Support",
             description: "Our support team is ready to assist you 24/7. You can resolve your queries and get updated on your projects anytime.",
-            imgsrc: "/images/about-1.png"
+            imgsrc: "/images/about-1.webp"
         }
     ]
 
@@ -30,7 +30,7 @@ const Journey = () => {
         <div className='about-us-main'>
             <div className="container">
                 <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-6 lg:mb-28 mb-6">
-                    <img src="/images/abt-1.jpg" alt="" className='aspect-square rounded-xl lg:order-1 order-2' />
+                    <img src="/images/abt-1.webp" alt="" className='aspect-square rounded-xl lg:order-1 order-2' />
                     <div className='flex flex-col justify-center lg:order-2 order-1'>
                         <div className="head-pill w-fit">
                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />

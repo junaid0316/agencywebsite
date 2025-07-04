@@ -8,22 +8,22 @@ const AboutUs = () => {
         {
             title: "Professional Experts",
             description: "Our team of experts is passionate about innovation and is well-versed in emerging problems, enabling you to tackle any problem efficiently.",
-            imgsrc: "/images/about-1.png"
+            imgsrc: "/images/about-1.webp"
         },
         {
             title: "Proven Results",
             description: "Relying on us means getting measurable success and growth. Our experts leave no stone unturned to ensure good returns from investment in your project.",
-            imgsrc: "/images/about-2.png"
+            imgsrc: "/images/about-2.webp"
         },
         {
             title: "High-Quality Services",
             description: "Since we offer tried-and-tested solutions you can find unparalleled services related to digital marketing and web designing under one roof.",
-            imgsrc: "/images/about-3.png"
+            imgsrc: "/images/about-3.webp"
         },
         {
             title: "Customer Support",
             description: "Our support team is ready to assist you 24/7. You can resolve your queries and get updated on your projects anytime.",
-            imgsrc: "/images/about-4.png"
+            imgsrc: "/images/about-4.webp"
         }
     ]
 

@@ -54,7 +54,7 @@ export default function ContactUsModal({ open, onClose }) {
                 <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
                     {/* Left Side - Form */}
                     <div className='lft-form'>
-                        <img src="/images/logo.png" alt="" className='w-28 h-10' />
+                        <img src="/images/logo.webp" alt="" className='w-28 h-10' />
                         <h2>
                             Lets Start a Winning{" "}
                             <span className="text-orange">
@@ -208,7 +208,7 @@ export default function ContactUsModal({ open, onClose }) {
                             </p>
                         </div>
                         <div className="img-cont">
-                            <img src="/images/modal-image.png" alt="" />
+                            <img src="/images/modal-image.webp" alt="" />
                         </div>
                     </div>
                 </div>

@@ -17,62 +17,62 @@ const RecentWork = () => {
 
     const recentWork = [
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         },
         {
-            img: '/images/showcase-1.jpg',
+            img: '/images/showcase-1.webp',
             tag: 'SPOTLIMO',
             title: 'Luxurious Limousine and Black Car Service Everyone Can Afford'
         }

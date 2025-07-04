@@ -512,14 +512,14 @@ p {
     &::before {
         content: "";
         @apply absolute top-[-120px] left-0 w-full h-[200px];
-        background: linear-gradient(to bottom, transparent 0%, #121212 80%), url(/images/projects-bg.png);
+        background: linear-gradient(to bottom, transparent 0%, #121212 80%), url(/images/projects-bg.webp);
         z-index: -1;
     }
 
     &::after {
         content: "";
         @apply absolute bottom-0 left-0 w-full h-[200px];
-        background: url("/images/projects-bg.png");
+        background: url("/images/projects-bg.webp");
         z-index: -1;
     }
 

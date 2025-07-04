@@ -26,7 +26,7 @@ const SoftwareDevelopment = () => {
                 heading: "YMake Better Customer Relationships With Custom CRM",
                 description: "Tired of juggling multiple customer management tools? Ready to streamline your operations and delight your customers? Wizspeed's custom CRM solutions are here to revolutionize your business. Our team of experienced developers will work closely with you to create a CRM solution that aligns with your specific industry needs, providing a comprehensive solution for everything from lead generation and nurturing to customer support and retention. "
             },
-            image: "/images/crm-1.png",
+            image: "/images/crm-1.webp",
             icon: <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.890789 11.5813C0.349455 10.504 0.0449219 9.28693 0.0449219 8C0.0449219 6.71307 0.349455 5.496 0.890789 4.41867C2.20546 1.79893 4.91692 0 8.04492 0C11.1729 0 13.8844 1.79893 15.1991 4.41867C15.7404 5.496 16.0449 6.71307 16.0449 8C16.0449 9.28693 15.7404 10.504 15.1991 11.5813C13.8844 14.2011 11.1729 16 8.04492 16C4.91692 16 2.20546 14.2011 0.890789 11.5813ZM1.63746 5.34773C1.29879 6.1648 1.11159 7.0608 1.11159 8C1.11159 8.9392 1.29879 9.8352 1.63746 10.6523C2.50839 10.3147 3.53506 10.0437 4.66839 9.86133C4.60972 9.26507 4.57826 8.6416 4.57826 8C4.57826 7.3584 4.60972 6.73493 4.66839 6.13867C3.53506 5.95627 2.50839 5.68533 1.63746 5.34773ZM13.9655 4.39253C13.0728 2.93055 11.672 1.8494 10.0316 1.35627C10.1057 1.47147 10.1777 1.5936 10.2471 1.72267C10.702 2.57227 11.0657 3.7328 11.2844 5.0816C12.2807 4.92 13.1879 4.6848 13.9655 4.39253ZM6.05826 1.35627C4.41781 1.8494 3.01704 2.93055 2.12439 4.39253C2.90199 4.68533 3.80919 4.92 4.80546 5.0816C5.02412 3.7328 5.38786 2.57227 5.84279 1.72267C5.91212 1.5936 5.98412 1.47147 6.05826 1.35627ZM14.4524 10.6523C14.7911 9.8352 14.9783 8.9392 14.9783 8C14.9783 7.0608 14.7911 6.1648 14.4524 5.34773C13.5815 5.68533 12.5548 5.95627 11.4215 6.13867C11.4801 6.73493 11.5116 7.3584 11.5116 8C11.5116 8.6416 11.4801 9.26507 11.4215 9.86133C12.5548 10.0437 13.5815 10.3147 14.4524 10.6523ZM2.12439 11.6075C3.01704 13.0695 4.41781 14.1506 6.05826 14.6437C5.98165 14.5245 5.90977 14.4023 5.84279 14.2773C5.38786 13.4277 5.02412 12.2672 4.80546 10.9184C3.80919 11.08 2.90199 11.3152 2.12439 11.6075ZM10.0316 14.6437C11.672 14.1506 13.0728 13.0695 13.9655 11.6075C13.1879 11.3152 12.2807 11.08 11.2844 10.9184C11.0657 12.2672 10.702 13.4277 10.2471 14.2773C10.1777 14.4064 10.1057 14.5285 10.0316 14.6437ZM8.04492 1.06667C7.83959 1.06667 7.64759 1.16427 7.46306 1.32107C7.21559 1.5312 6.98946 1.84107 6.78306 2.22667C6.37559 2.9872 6.05559 4.02133 5.86039 5.22187C6.55906 5.29493 7.29079 5.33333 8.04492 5.33333C8.79906 5.33333 9.53079 5.2944 10.2295 5.22187C10.0343 4.02133 9.71426 2.9872 9.30679 2.22667C9.10039 1.84107 8.87426 1.5312 8.62679 1.32107C8.44226 1.16427 8.25026 1.06667 8.04492 1.06667ZM8.04492 14.9333C8.25026 14.9333 8.44226 14.8357 8.62679 14.6789C8.87426 14.4688 9.10039 14.1589 9.30679 13.7733C9.71426 13.0128 10.0343 11.9787 10.2295 10.7781C9.53079 10.7056 8.79906 10.6667 8.04492 10.6667C7.29079 10.6667 6.55906 10.7056 5.86039 10.7781C6.05559 11.9787 6.37559 13.0128 6.78306 13.7733C6.98946 14.1589 7.21559 14.4688 7.46306 14.6789C7.64759 14.8357 7.83959 14.9333 8.04492 14.9333ZM10.3649 9.72107C10.4172 9.1696 10.4449 8.59307 10.4449 8C10.4449 7.40693 10.4172 6.8304 10.3649 6.27893C9.62306 6.35787 8.84546 6.4 8.04492 6.4C7.24439 6.4 6.46679 6.35787 5.72492 6.27893C5.67266 6.8304 5.64492 7.40693 5.64492 8C5.64492 8.59307 5.67266 9.1696 5.72492 9.72107C6.46679 9.64213 7.24439 9.6 8.04492 9.6C8.84546 9.6 9.62306 9.64213 10.3649 9.72107Z" fill="#AFAFAF" />
             </svg>
@@ -39,7 +39,7 @@ const SoftwareDevelopment = () => {
                 heading: "Transform Your Business With Custom ERP Solutions",
                 description: "Our ERP software development services offer comprehensive solutions for businesses seeking to streamline operations, enhance efficiency, and drive growth. Our expert team designs, develops, and implements tailored Enterprise Resource Planning systems that integrate core business functions, such as finance, HR, supply chain management, and customer relationships, into a unified platform."
             },
-            image: "/images/erp-1.png",
+            image: "/images/erp-1.webp",
             icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.8923 2.5H9.01733C8.84483 2.5 8.70483 2.36 8.70483 2.1875C8.70483 2.015 8.84483 1.875 9.01733 1.875H10.8923C11.0648 1.875 11.2048 2.015 11.2048 2.1875C11.2048 2.36 11.0648 2.5 10.8923 2.5Z" fill="white" />
                 <path d="M13.3923 19.375H6.51733C5.65546 19.375 4.95483 18.6737 4.95483 17.8125V7.1875C4.95483 7.015 5.09483 6.875 5.26733 6.875C5.43983 6.875 5.57983 7.015 5.57983 7.1875V17.8125C5.57983 18.3294 6.00046 18.75 6.51733 18.75H13.3923C13.9092 18.75 14.3298 18.3294 14.3298 17.8125V7.1875C14.3298 7.015 14.4698 6.875 14.6423 6.875C14.8148 6.875 14.9548 7.015 14.9548 7.1875V17.8125C14.9548 18.6737 14.2542 19.375 13.3923 19.375Z" fill="white" />
@@ -61,7 +61,7 @@ const SoftwareDevelopment = () => {
                 heading: "Level Up Your Business with Custom POS",
                 description: "Say goodbye to clunky cash registers and hello to a POS system that's as smart as it is stylish. With Wizspeed, you're not just getting a tool but a business partner that helps you streamline operations, delight customers, and boost your bottom line.Our custom POS solutions are designed to fit your business like a glove. Whether you're a small boutique or a bustling restaurant, we've got the features and functionality you need to succeed. Our POS can handle everything from inventory management to customer loyalty programs."
             },
-            image: "/images/pos-1.png",
+            image: "/images/pos-1.webp",
             icon: <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1_429_6689" fill="white">
                     <path d="M3.21475 12.4586L4.87786 15.3394C5.23674 15.9617 6.04402 16.192 6.68245 15.823C7.31421 15.4579 7.53128 14.6508 7.16583 14.0185L6.1751 12.3023L7.03307 11.8069C7.19099 11.7156 7.24515 11.5137 7.15394 11.3558L6.72452 10.612C6.77571 10.6021 7.11243 10.536 13.05 9.37124C13.784 9.33138 14.2238 8.52859 13.853 7.88679L12.7555 5.98584L13.4569 4.9235C13.4907 4.87232 13.5095 4.81273 13.5114 4.75141C13.5132 4.6901 13.498 4.62948 13.4673 4.57635L12.8068 3.43238C12.7761 3.37932 12.7312 3.33584 12.6772 3.3068C12.6232 3.27776 12.5622 3.2643 12.501 3.26792L11.2304 3.34414L10.012 1.23365C9.83553 0.927941 9.51935 0.742806 9.16639 0.738413C9.16213 0.738281 9.158 0.738281 9.15374 0.738281C8.81266 0.738281 8.50306 0.90806 8.31964 1.19508L4.00555 6.69084L1.20092 8.31003C0.097835 8.94668 -0.284324 10.3619 0.354798 11.4679C0.938671 12.4793 2.16959 12.8771 3.21475 12.4587V12.4586ZM6.59398 14.3489C6.77637 14.6644 6.66842 15.0682 6.35194 15.251C6.03448 15.4346 5.63019 15.3218 5.44985 15.0093L3.79862 12.1489L4.94259 11.4884C6.85365 14.7988 6.56327 14.2959 6.59398 14.3489ZM5.84485 11.7301L5.51461 11.1582L6.08659 10.8279L6.41684 11.3999L5.84485 11.7301ZM12.3369 3.93934L12.7933 4.72988L12.3863 5.34625L11.5996 3.9836L12.3369 3.93934ZM8.87201 1.55719C8.96064 1.41221 9.10123 1.39725 9.15826 1.39877C9.21463 1.39943 9.35512 1.41697 9.43986 1.56379L13.281 8.21703C13.4062 8.43364 13.2541 8.70596 13.0032 8.71217C12.9582 8.71316 12.9374 8.72132 12.822 8.74288L8.75886 1.70514C8.84413 1.5955 8.8551 1.58493 8.87201 1.55719ZM8.31937 2.26504L12.1369 8.87729L6.37546 10.0073L4.62361 6.97307L8.31937 2.26504ZM0.926782 11.1377C0.78191 10.8872 0.705487 10.603 0.705188 10.3137C0.705188 9.7247 1.02173 9.17616 1.53113 8.88208L4.10512 7.39598L5.75635 10.2559L3.18239 11.7422C2.39379 12.1972 1.38202 11.9261 0.926815 11.1377H0.926782Z" />
@@ -86,31 +86,31 @@ const SoftwareDevelopment = () => {
                 number: "01",
                 title: "Turning Your CRM Vision into a Reality",
                 description: "Explore how we collaborate to transform your unique needs into a custom-made customer relationship management (CRM) solution.",
-                image: "/images/crm-2.jpg"
+                image: "/images/crm-2.webp"
             },
             {
                 number: "02",
                 title: "Get to Know Your Business",
                 description: "We start by getting to know your business inside and out. Through comprehensive and immersive sessions, we uncover your unique CRM requirements, ensuring we capture everything you need to succeed.",
-                image: "/images/crm-3.jpg"
+                image: "/images/crm-3.webp"
             },
             {
                 number: "03",
                 title: "Dream It Up",
                 description: "With your needs in mind, we put on our creative hats and design your dream CRM. We'll create visual mockups and prototypes to give you a sneak peek at how everything will look and work.",
-                image: "/images/crm-4.jpg"
+                image: "/images/crm-4.webp"
             },
             {
                 number: "04",
                 title: "Build the Magic",
                 description: "Our experienced developers will bring your app to life using the latest Swift programming language. We’ll ensure that your app adheres to Apple’s guidelines and delivers a seamless user experience.",
-                image: "/images/crm-5.jpg"
+                image: "/images/crm-5.webp"
             },
             {
                 number: "05",
                 title: "Testing & Launch",
                 description: "Before we hand over the keys, we rigorously test your CRM for functionality and bugs. Once it’s perfect, we launch it into action and support your team in getting up and running smoothly.",
-                image: "/images/crm-6.jpg"
+                image: "/images/crm-6.webp"
             }
         ],
         'custom-erp': [
@@ -118,31 +118,31 @@ const SoftwareDevelopment = () => {
                 number: "01",
                 title: "How We Work?",
                 description: "Explore how we collaborate to transform your unique needs into a custom-made enterprise resource planning (ERP) software.",
-                image: "/images/erp-2.png"
+                image: "/images/erp-2.webp"
             },
             {
                 number: "02",
                 title: "Project Planning",
                 description: "We begin by understanding your goals and vision so you can get a strategy that’s spot-on, tailored to your needs. Then, we’ll set realistic project planning with the scope, timeline, and resources needed for the project. We’ll take you through a smooth integration plan and ensure you get an SEO-friendly site.",
-                image: "/images/erp-3.png"
+                image: "/images/erp-3.webp"
             },
             {
                 number: "03",
                 title: "Design & Theme Creation",
                 description: "With a visually appealing and user-friendly website, you can captivate your audience. Our creative team works hard to align with your vision, service components, and support your ideas into an direction that is rooted. Besides, our team builds appealing, responsive, and easy-to-navigate themes.",
-                image: "/images/erp-4.png"
+                image: "/images/erp-4.webp"
             },
             {
                 number: "04",
                 title: "Web Development",
                 description: "Next, our developers will turn designs into a fully functional website. We’ll handle the content integration through the WordPress administration, ensuring you get an engaging, low-maintain effort. Our focus will be on designing a WordPress website that is safe, reliable, and fast.",
-                image: "/images/erp-5.png"
+                image: "/images/erp-5.webp"
             },
             {
                 number: "05",
                 title: "Website Launch",
                 description: "Our web development process is incomplete without quality assurance. Our QA team will ensure your website is ready to go live and ready to scale. In our final launch, each page is functional and ready to go, let our launch process smooth and hassle-free.",
-                image: "/images/erp-6.png"
+                image: "/images/erp-6.webp"
             }
         ],
         'pos-development': [
@@ -150,31 +150,31 @@ const SoftwareDevelopment = () => {
                 number: "01",
                 title: "See Our Journey to a Custom Solution",
                 description: "Explore how we collaborate to transform your unique needs into a custom-made point-of-sale (POS) system.",
-                image: "/images/pos-2.png"
+                image: "/images/pos-2.webp"
             },
             {
                 number: "02",
                 title: "Spill the Beans",
                 description: "We'll work closely with you to understand your unique business requirements, goals, and pain points. Together, we'll identify the essential features and functionalities that will drive your POS system's success.",
-                image: "/images/pos-3.png"
+                image: "/images/pos-3.webp"
             },
             {
                 number: "03",
                 title: "Design and Prototyping",
                 description: "We'll create visual representations of your POS system's user interface to ensure a seamless user experience. We'll also make interactive prototypes to allow you to visualize and test the functionality of your POS system before development begins.",
-                image: "/images/pos-4.png"
+                image: "/images/pos-4.webp"
             },
             {
                 number: "04",
                 title: "Development and Integration",
                 description: "We'll employ agile development methodologies to ensure flexibility, transparency, and continuous improvement throughout the process. We'll seamlessly integrate your POS system with inventory management, accounting, and customer relationship management.",
-                image: "/images/pos-5.png"
+                image: "/images/pos-5.webp"
             },
             {
                 number: "05",
                 title: "Testing and Quality Assurance",
                 description: "Our team will conduct thorough testing to identify and address any bugs or issues before the launch. We'll ensure that your POS system delivers a reliable, user-friendly experience.",
-                image: "/images/pos-6.png"
+                image: "/images/pos-6.webp"
             }
         ]
     }

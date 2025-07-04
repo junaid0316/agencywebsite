@@ -65,7 +65,7 @@ const FAQs = () => {
 
                         <div className="mt-8">
                             <img
-                                src="/images/faqs.jpg"
+                                src="/images/faqs.webp"
                                 alt="Team collaboration"
                                 className="rounded-xl aspect-video"
                             />

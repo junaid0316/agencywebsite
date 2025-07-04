@@ -17,37 +17,37 @@ const MobileApps = () => {
 
     const data = [
         {
-            img: '/images/mobile-app.png',
+            img: '/images/mobile-app.webp',
             title: 'Infinite REI Group',
             description: "Let's inspire the future with a Home Selling",
             link: '/digital-marketing-case-study'
         },
         {
-            img: '/images/mobile-app.png',
+            img: '/images/mobile-app.webp',
             title: 'Prince House',
             description: "Let' us Find Your Dream Home",
             link: '/digital-marketing-case-study'
         },
         {
-            img: '/images/mobile-app.png',
+            img: '/images/mobile-app.webp',
             title: '8 min away',
             description: "Delicious Food at your Door Step",
             link: '/digital-marketing-case-study'
         },
         {
-            img: '/images/mobile-app.png',
+            img: '/images/mobile-app.webp',
             title: 'The Art of Living',
             description: "A Home for the Soul",
             link: '/digital-marketing-case-study'
         },
         {
-            img: '/images/mobile-app.png',
+            img: '/images/mobile-app.webp',
             title: 'Infinite REI Group',
             description: "Let's inspire the future with a Home Selling",
             link: '/digital-marketing-case-study'
         },
         {
-            img: '/images/mobile-app.png',
+            img: '/images/mobile-app.webp',
             title: '8 min away',
             description: "Delicious Food at your Door Step",
             link: '/digital-marketing-case-study'

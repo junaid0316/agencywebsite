@@ -4,53 +4,53 @@ import Marquee from 'react-fast-marquee'
 const TrustedBy = () => {
     const logos = [
         {
-            img: '/images/trust-1.png',
+            img: '/images/trust-1.webp',
             title: 'feedly',
         },
         {
-            img: '/images/feedly.png',
+            img: '/images/feedly.webp',
             title: 'feedly',
         },
         {
-            img: '/images/trust-2.png',
+            img: '/images/trust-2.webp',
             title: 'feedly',
         },
         {
-            img: '/images/trust-3.png',
+            img: '/images/trust-3.webp',
             title: 'feedly',
         },
         {
-            img: '/images/trust-4.png',
+            img: '/images/trust-4.webp',
             title: 'feedly',
         },
         // {
-        //     img: '/images/trust-5.png',
+        //     img: '/images/trust-5.webp',
         //     title: 'feedly',
         // },
         {
-            img: '/images/trust-6.png',
+            img: '/images/trust-6.webp',
             title: 'feedly',
         },
     ]
     const logos2 = [
         {
-            img: '/images/trust-7.png',
+            img: '/images/trust-7.webp',
             title: 'feedly',
         },
         {
-            img: '/images/trust-8.png',
+            img: '/images/trust-8.webp',
             title: 'feedly',
         },
         {
-            img: '/images/trust-9.png',
+            img: '/images/trust-9.webp',
             title: 'feedly',
         },
         {
-            img: '/images/trust-10.png',
+            img: '/images/trust-10.webp',
             title: 'feedly',
         },
         {
-            img: '/images/trust-11.png',
+            img: '/images/trust-11.webp',
             title: 'feedly',
         },
     ]

@@ -27,14 +27,14 @@ const WhatWeDo = () => {
 
             ],
             images: {
-                'custom-web-design': '/images/custom-development.jpg',
-                '3d-animated': '/images/animated-1.jpg',
-                'webflow': '/images/web-flow-1.jpg',
-                'wix': '/images/wix-1.jpg',
-                'shopify': '/images/shopify-1.jpg',
-                'e-commerce': '/images/ecommerce-1.jpg',
-                'square-space': '/images/space-1.jpg',
-                'wordpress': '/images/wordpress-1.jpg',
+                'custom-web-design': '/images/custom-development.webp',
+                '3d-animated': '/images/animated-1.webp',
+                'webflow': '/images/web-flow-1.webp',
+                'wix': '/images/wix-1.webp',
+                'shopify': '/images/shopify-1.webp',
+                'e-commerce': '/images/ecommerce-1.webp',
+                'square-space': '/images/space-1.webp',
+                'wordpress': '/images/wordpress-1.webp',
             }
         },
         'digital-marketing': {
@@ -58,13 +58,13 @@ const WhatWeDo = () => {
                 { id: 'local-seo', name: 'Local SEO', icon: '📍' }
             ],
             images: {
-                'search-engine-optimization': '/images/seo2-main.png',
-                'social-media-marketing': '/images/social-1.jpg',
-                'pay-per-click-marketing': '/images/ppc-main.png',
-                'content-marketing': '/images/whatwe.png',
-                'google-merchant-advertising': '/images/gm-main.jpg',
-                'corporate-branding': '/images/cb-main.jpg',
-                'local-seo': '/images/seo-main.jpg',
+                'search-engine-optimization': '/images/seo2-main.webp',
+                'social-media-marketing': '/images/social-1.webp',
+                'pay-per-click-marketing': '/images/ppc-main.webp',
+                'content-marketing': '/images/whatwe.webp',
+                'google-merchant-advertising': '/images/gm-main.webp',
+                'corporate-branding': '/images/cb-main.webp',
+                'local-seo': '/images/seo-main.webp',
             }
         },
         'software-development': {
@@ -82,9 +82,9 @@ const WhatWeDo = () => {
             ],
 
             images: {
-                'custom-crm': '/images/crm-1.png',
-                'custom-erp': '/images/erp-1.png',
-                'pos-development': '/images/pos-1.png',
+                'custom-crm': '/images/crm-1.webp',
+                'custom-erp': '/images/erp-1.webp',
+                'pos-development': '/images/pos-1.webp',
             }
         },
         'app-development': {
@@ -110,10 +110,10 @@ const WhatWeDo = () => {
                 { id: 'dynamic-app-development', name: 'Dynamic App Development', icon: '📲' }
             ],
             images: {
-                'ios-app-development': '/images/ios-1.png',
-                'android-app-development': '/images/android-1.png',
-                'static-app-development': '/images/static-1.jpg',
-                'dynamic-app-development': '/images/dynamic-1.jpg',
+                'ios-app-development': '/images/ios-1.webp',
+                'android-app-development': '/images/android-1.webp',
+                'static-app-development': '/images/static-1.webp',
+                'dynamic-app-development': '/images/dynamic-1.webp',
             }
         }
     }

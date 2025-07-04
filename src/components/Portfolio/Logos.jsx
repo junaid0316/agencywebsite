@@ -4,23 +4,23 @@ import Marquee from 'react-fast-marquee'
 const Logos = () => {
     const logos = [
         {
-            img: '/images/logos-1.png',
+            img: '/images/logos-1.webp',
             title: 'Logo 1',
         },
         {
-            img: '/images/logos-2.png',
+            img: '/images/logos-2.webp',
             title: 'Logo 2',
         },
         {
-            img: '/images/logos-3.png',
+            img: '/images/logos-3.webp',
             title: 'Logo 3',
         },
         {
-            img: '/images/logos-4.png',
+            img: '/images/logos-4.webp',
             title: 'Logo 4',
         },
         {
-            img: '/images/logos-5.png',
+            img: '/images/logos-5.webp',
             title: 'Logo 5',
         },
 

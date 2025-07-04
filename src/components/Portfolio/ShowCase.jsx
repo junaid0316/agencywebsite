@@ -21,7 +21,7 @@ const ShowCase = () => {
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 lg:my-16 my-10 min-h-[600px]">
                     <div className='grid lg:grid-flow-col lg:grid-rows-2 lg:grid-cols-none grid-cols-2 gap-5'>
                         <div className='recent-work-card'>
-                            <img src='/images/showcase-1.jpg' alt="" className='aspect-auto h-full' />
+                            <img src='/images/showcase-1.webp' alt="" className='aspect-auto h-full' />
                             <div className="recent-content">
                                 <span>
                                     <img src="/images/flower-white.svg" alt="" className="flwr-white" />
@@ -33,7 +33,7 @@ const ShowCase = () => {
                             </div>
                         </div>
                         <div className='recent-work-card' >
-                            <img src='/images/showcase-2.jpg' alt="" className='aspect-auto h-full' />
+                            <img src='/images/showcase-2.webp' alt="" className='aspect-auto h-full' />
                             <div className="recent-content">
                                 <span>
                                     <img src="/images/flower-white.svg" alt="" className="flwr-white" />
@@ -48,7 +48,7 @@ const ShowCase = () => {
 
                     <div className=''>
                         <div className='recent-work-card h-full' >
-                            <img src='/images/showcase-3.jpg' alt="" className='aspect-auto h-full' />
+                            <img src='/images/showcase-3.webp' alt="" className='aspect-auto h-full' />
                             <div className="recent-content">
                                 <span>
                                     <img src="/images/flower-white.svg" alt="" className="flwr-white" />
@@ -63,7 +63,7 @@ const ShowCase = () => {
 
                     <div className='grid lg:grid-flow-col lg:grid-rows-5 lg:grid-cols-none grid-cols-2 gap-5'>
                         <div className='recent-work-card lg:row-span-2' >
-                            <img src='/images/showcase-1.jpg' alt="" className='aspect-auto h-full' />
+                            <img src='/images/showcase-1.webp' alt="" className='aspect-auto h-full' />
                             <div className="recent-content">
                                 <span>
                                     <img src="/images/flower-white.svg" alt="" className="flwr-white" />
@@ -75,7 +75,7 @@ const ShowCase = () => {
                             </div>
                         </div>
                         <div className='recent-work-card lg:row-span-3' >
-                            <img src='/images/showcase-2.jpg' alt="" className='aspect-auto h-full' />
+                            <img src='/images/showcase-2.webp' alt="" className='aspect-auto h-full' />
                             <div className="recent-content">
                                 <span>
                                     <img src="/images/flower-white.svg" alt="" className="flwr-white" />
@@ -90,7 +90,7 @@ const ShowCase = () => {
 
                     <div className='grid lg:grid-flow-col lg:grid-rows-5 lg:grid-cols-none grid-cols-2 gap-5'>
                         <div className='recent-work-card lg:row-span-3' >
-                            <img src='/images/showcase-1.jpg' alt="" className='aspect-auto h-full' />
+                            <img src='/images/showcase-1.webp' alt="" className='aspect-auto h-full' />
                             <div className="recent-content">
                                 <span>
                                     <img src="/images/flower-white.svg" alt="" className="flwr-white" />
@@ -102,7 +102,7 @@ const ShowCase = () => {
                             </div>
                         </div>
                         <div className='recent-work-card lg:row-span-2' >
-                            <img src='/images/showcase-2.jpg' alt="" className='aspect-auto h-full' />
+                            <img src='/images/showcase-2.webp' alt="" className='aspect-auto h-full' />
                             <div className="recent-content">
                                 <span>
                                     <img src="/images/flower-white.svg" alt="" className="flwr-white" />

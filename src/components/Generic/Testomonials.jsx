@@ -16,7 +16,7 @@ const Testomonials = () => {
             role: "UI UX Designer",
             rating: 5,
             text: "I have been extremely happy with the results of working with the creative agency and I would highly recommend them to anyone who is looking for high-quality design and development services.",
-            avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+            avatar: "/images/john-doe.webp",
             hasVideo: true,
             videoThumbnail: "/images/travelica-vid-1.mp4"
         },
@@ -26,7 +26,7 @@ const Testomonials = () => {
             role: "Architect",
             rating: 5,
             text: "Outstanding work! The team delivered exactly what we needed and exceeded our expectations in every way.",
-            avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+            avatar: "/images/nick.webp",
             hasVideo: false,
             videoThumbnail: "/images/travelica-vid-1.mp4"
         },
@@ -36,7 +36,7 @@ const Testomonials = () => {
             role: "Designer",
             rating: 5,
             text: "Professional, creative, and reliable. They transformed our vision into reality with exceptional attention to detail.",
-            avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+            avatar: "/images/nina.webp",
             hasVideo: true,
             videoThumbnail: "/images/travelica-vid-1.mp4"
         },
@@ -46,7 +46,7 @@ const Testomonials = () => {
             role: "Engineer",
             rating: 5,
             text: "Excellent communication and top-notch technical skills. The project was completed on time and within budget.",
-            avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+            avatar: "/images/tom.webp",
             hasVideo: false,
             videoThumbnail: "/images/travelica-vid-1.mp4"
         }
@@ -201,7 +201,7 @@ const Testomonials = () => {
                                         <img
                                             src={testimonial.avatar}
                                             alt={testimonial.name}
-                                            className="size-14 rounded-full"
+                                            className="size-14 rounded-full object-cover"
                                         />
                                         <div className="">
                                             <p className="text-white text-lg font-semibold">{testimonial.name}</p>

@@ -147,7 +147,7 @@ const Navbar = () => {
                 <div className="navbar-container">
                     <div className="navbar-logo">
                         <a href="/" className="logo-link">
-                            <img src="/images/logo.png" alt="Logo" className="logo-image" />
+                            <img src="/images/logo.webp" alt="Logo" className="logo-image" />
                         </a>
                     </div>
 

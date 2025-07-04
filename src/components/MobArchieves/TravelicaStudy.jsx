@@ -20,7 +20,7 @@ const TravelicaStudy = () => {
                         </p>
                     </div>
 
-                    <img src='/images/case-study-travelica.png' className='w-full' />
+                    <img src='/images/case-study-travelica.webp' className='w-full' />
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
@@ -47,8 +47,8 @@ const TravelicaStudy = () => {
                         >
                             Your browser does not support the video tag.
                         </video>
-                        <img src="/images/travelica-vid-2.jpg" alt="" className='travelica-img' />
-                        <img src="/images/travelica-vid-3.png" alt="" className='travelica-img' />
+                        <img src="/images/travelica-vid-2.webp" alt="" className='travelica-img' />
+                        <img src="/images/travelica-vid-3.webp" alt="" className='travelica-img' />
                     </div>
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
@@ -64,14 +64,14 @@ const TravelicaStudy = () => {
 
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
-                            <img src="/images/the-goal-mob.png" alt="" />
+                            <img src="/images/the-goal-mob.webp" alt="" />
                             <p className='text-3xl text-white'>
                                 Many travel apps offer generic suggestions and lack personalization. The goal was to create a sleek, intuitive interface that feels inspiring and gives users control over how they discover and organize their trips.
                             </p>
                         </div>
                         <div className="grid grid-flow-row lg:gap-10 gap-6">
-                            <img src="/images/goal-2.png" alt="" className='travelica-img' />
-                            <img src="/images/goal-3.jpg" alt="" className='travelica-img' />
+                            <img src="/images/goal-2.webp" alt="" className='travelica-img' />
+                            <img src="/images/goal-3.webp" alt="" className='travelica-img' />
                         </div>
                     </div>
 

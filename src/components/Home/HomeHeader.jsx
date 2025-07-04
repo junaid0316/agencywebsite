@@ -66,10 +66,10 @@ const HomeHeader = () => {
 
             <div className="clients !hidden md:!flex">
                 <div className="flex">
-                    <img src='/images/headerUser.png' />
-                    <img src='/images/headerUser-2.png' />
-                    <img src='/images/headerUser-3.png' />
-                    <img src='/images/headerUser-4.png' />
+                    <img src='/images/headerUser.webp' />
+                    <img src='/images/headerUser-2.webp' />
+                    <img src='/images/headerUser-3.webp' />
+                    <img src='/images/headerUser-4.webp' />
                 </div>
                 <span>
                     <strong>100+</strong>{' '}
@@ -80,10 +80,10 @@ const HomeHeader = () => {
             <div className="flex md:hidden mt-4 gap-3">
                 <div className="clients">
                     <div className="flex">
-                        <img src='/images/headerUser.png' />
-                        <img src='/images/headerUser-2.png' />
-                        <img src='/images/headerUser-3.png' />
-                        <img src='/images/headerUser-4.png' />
+                        <img src='/images/headerUser.webp' />
+                        <img src='/images/headerUser-2.webp' />
+                        <img src='/images/headerUser-3.webp' />
+                        <img src='/images/headerUser-4.webp' />
                     </div>
                     <span>
                         <strong>100+</strong>{' '}
