@@ -6,10 +6,21 @@
     // font-family: "Space Grotesk", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     background-color: #121212;
 }
+
+/* index.css */
+#smooth-scrollbar {
+    height: 100vh;
+    overflow: hidden;
+}
+
 
 img {
     max-width: 100%;
