@@ -23,10 +23,10 @@ const AboutUs = () => {
                 <Navbar />
                 <div className="container lg:mt-16 md:mt-12 mt-8">
                     <ServiceHeader data={Headdata} />
-                    <img src="/images/headerCurveLeft.svg" alt="" className="" />
-                    <img src="/images/headerRectangleMd.svg" alt="" className="" />
-                    <img src="/images/headerRectangleSm.svg" alt="" className="" />
                 </div>
+                <img src="/images/headerCurveLeft.svg" alt="" className="" />
+                <img src="/images/headerRectangleMd.svg" alt="" className="" />
+                <img src="/images/headerRectangleSm.svg" alt="" className="" />
             </div>
             <TrustedBy />
             <Journey />

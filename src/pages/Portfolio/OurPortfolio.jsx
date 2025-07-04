@@ -38,10 +38,10 @@ const OurPortfolio = () => {
                             }
                         </p>
                     </div>
-                    <img src="/images/headerCurveLeft.svg" alt="" className="" />
-                    <img src="/images/headerRectangleMd.svg" alt="" className="" />
-                    <img src="/images/headerRectangleSm.svg" alt="" className="" />
                 </div>
+                <img src="/images/headerCurveLeft.svg" alt="" className="" />
+                <img src="/images/headerRectangleMd.svg" alt="" className="" />
+                <img src="/images/headerRectangleSm.svg" alt="" className="" />
             </div>
             {/* <TrustedBy /> */}
             <RecentWork />
