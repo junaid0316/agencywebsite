@@ -453,14 +453,14 @@ const WebDevelopment = () => {
 
     return (
         <>
-            <div className="service-page" data-aos="fade-down">
+            <div className="service-page relative" data-aos="fade-down">
                 <Navbar />
                 <div className="container lg:mt-16 md:mt-12 mt-8">
                     <ServiceHeader data={data} />
-                    <img src="/images/headerCurveLeft.svg" alt="" className="" />
-                    <img src="/images/headerRectangleMd.svg" alt="" className="" />
-                    <img src="/images/headerRectangleSm.svg" alt="" className="" />
                 </div>
+                <img src="/images/headerCurveLeft.svg" alt="" className="" />
+                <img src="/images/headerRectangleMd.svg" alt="" className="" />
+                <img src="/images/headerRectangleSm.svg" alt="" className="" />
             </div>
             <div data-aos="fade-up">
                 <TrustedBy />

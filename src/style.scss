@@ -1332,29 +1332,26 @@ nav input {
     overflow: hidden;
     z-index: 1;
 
-    .container {
-        position: relative;
+    >img {
+        position: absolute;
+        z-index: -1;
 
-        >img {
-            position: absolute;
-            z-index: -1;
+        &:nth-of-type(1) {
+            width: 1160px;
+            height: 620px;
+            top: 120px;
+            left: -460px;
+            transform: rotate(5deg);
+        }
 
-            &:nth-of-type(1) {
-                width: 980px;
-                height: 630px;
-                top: 0px;
-                left: -420px;
-            }
+        &:nth-of-type(2) {
+            top: 280px;
+            right: 0px;
+        }
 
-            &:nth-of-type(2) {
-                top: 80px;
-                right: -80px;
-            }
-
-            &:nth-of-type(3) {
-                bottom: 0px;
-                right: 0px;
-            }
+        &:nth-of-type(3) {
+            bottom: 110px;
+            right: 45px;
         }
     }
 
@@ -1420,11 +1417,10 @@ nav input {
 .what-we-services-tab {
     border-top: 1px solid rgba(108, 108, 108, 0.3);
 
-    > {
-        div {
-            border-bottom: 1px solid rgba(108, 108, 108, 0.3);
-        }
+    >.service-in-tab {
+        border-bottom: 1px solid rgba(108, 108, 108, 0.3);
     }
+
 }
 
 .results-tab {
@@ -1845,6 +1841,167 @@ nav input {
     }
 }
 
+.service-in-tab {
+    transition: .3s all ease;
+
+    .numb {
+        transition: .3s all ease;
+    }
+
+    .serv-title {
+        transition: .3s all ease;
+
+        >span {
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s all ease;
+        }
+    }
+
+    &:hover {
+        .numb {
+            @apply text-white;
+            transition: .3s all ease;
+        }
+
+        .serv-title {
+            @apply text-white ml-4;
+            transition: .3s all ease;
+
+            >span {
+                opacity: 1;
+                visibility: visible;
+                transition: .3s all ease;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .left-step {
+        .number {
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            right: unset;
+            left: -38px;
+            bottom: unset;
+            top: -190px;
+        }
+
+        &::before {
+            left: -24px;
+            right: unset;
+        }
+
+        &.last {
+            &::before {
+                content: none;
+            }
+        }
+
+        &.first {
+            &::before {
+                height: calc(100% + 60px);
+                bottom: -60px;
+            }
+        }
+    }
+
+    .right-step {
+        .number {
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            right: unset;
+            left: -38px;
+            bottom: unset;
+            top: -190px;
+        }
+
+        &::before {
+            left: -24px;
+            right: unset;
+        }
+
+
+    }
+
+    .left-step-img {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -24px;
+            top: 0;
+            border-left: 2px solid #FFFFFF14;
+            border-image: repeating-linear-gradient(to bottom,
+                    #FFFFFF14 0,
+                    #FFFFFF14 16px,
+                    transparent 16px,
+                    transparent 28px) 1;
+            height: 100%;
+            width: 1px;
+        }
+    }
+
+    .right-step-img {
+        position: relative;
+
+        &.first {
+            &::before {
+                height: 50%;
+                top: unset;
+                bottom: -20px;
+            }
+        }
+
+        &.last {
+            &::before {
+                height: 50%;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -24px;
+            top: 0;
+            border-left: 2px solid #FFFFFF14;
+            border-image: repeating-linear-gradient(to bottom,
+                    #FFFFFF14 0,
+                    #FFFFFF14 16px,
+                    transparent 16px,
+                    transparent 28px) 1;
+            height: 100%;
+            width: 1px;
+        }
+    }
+
+    .active-step {
+        .left-step-img {
+            &::before {
+                border-image: repeating-linear-gradient(to bottom,
+                        #FC5E14 0,
+                        #FC5E14 16px,
+                        transparent 16px,
+                        transparent 28px) 1;
+            }
+        }
+
+        .right-step-img {
+            &::before {
+                border-image: repeating-linear-gradient(to bottom,
+                        #FC5E14 0,
+                        #FC5E14 16px,
+                        transparent 16px,
+                        transparent 28px) 1;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0 12px;
@@ -2064,129 +2221,6 @@ nav input {
         padding: 16px;
     }
 
-    .left-step {
-        .number {
-            width: 30px;
-            height: 30px;
-            font-size: 16px;
-            right: unset;
-            left: -38px;
-            bottom: unset;
-            top: -190px;
-        }
-
-        &::before {
-            left: -24px;
-            right: unset;
-        }
-
-        &.last {
-            &::before {
-                content: none;
-            }
-        }
-
-        &.first {
-            &::before {
-                height: calc(100% + 60px);
-                bottom: -60px;
-            }
-        }
-    }
-
-    .right-step {
-        .number {
-            width: 30px;
-            height: 30px;
-            font-size: 16px;
-            right: unset;
-            left: -38px;
-            bottom: unset;
-            top: -190px;
-        }
-
-        &::before {
-            left: -24px;
-            right: unset;
-        }
-
-
-    }
-
-    .left-step-img {
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            left: -24px;
-            top: 0;
-            border-left: 2px solid #FFFFFF14;
-            border-image: repeating-linear-gradient(to bottom,
-                    #FFFFFF14 0,
-                    #FFFFFF14 16px,
-                    transparent 16px,
-                    transparent 28px) 1;
-            height: 100%;
-            width: 1px;
-        }
-    }
-
-    .right-step-img {
-        position: relative;
-
-        &.first {
-            &::before {
-                height: 50%;
-                top: unset;
-                bottom: -20px;
-            }
-        }
-
-        &.last {
-            &::before {
-                height: 50%;
-            }
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            left: -24px;
-            top: 0;
-            border-left: 2px solid #FFFFFF14;
-            border-image: repeating-linear-gradient(to bottom,
-                    #FFFFFF14 0,
-                    #FFFFFF14 16px,
-                    transparent 16px,
-                    transparent 28px) 1;
-            height: 100%;
-            width: 1px;
-        }
-    }
-
-    .active-step {
-        .left-step-img {
-            &::before {
-                border-image: repeating-linear-gradient(to bottom,
-                        #FC5E14 0,
-                        #FC5E14 16px,
-                        transparent 16px,
-                        transparent 28px) 1;
-            }
-        }
-
-        .right-step-img {
-            &::before {
-                border-image: repeating-linear-gradient(to bottom,
-                        #FC5E14 0,
-                        #FC5E14 16px,
-                        transparent 16px,
-                        transparent 28px) 1;
-            }
-        }
-    }
-
     .service-steps {
         padding: 0 0 80px;
     }
@@ -2248,6 +2282,11 @@ nav input {
 
     .right-way {
         padding: 0 0 50px;
+    }
+
+    .service-page>img:nth-of-type(2) {
+        top: 80px;
+        right: 0px;
     }
 }
 

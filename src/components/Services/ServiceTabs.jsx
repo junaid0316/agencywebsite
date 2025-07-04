@@ -90,8 +90,8 @@ const ServiceTabs = ({
                     </div>
 
                     <img
-                        src={currentTab.image}
-                        alt={currentTab.title}
+                        src={currentTab?.image}
+                        alt={currentTab?.title}
                         className={`rounded-lg shadow-2xl w-full h-full ${!isEqualBox ? 'lg:col-span-3' : ''} aspect-video lg:order-2 order-1`}
                     />
 

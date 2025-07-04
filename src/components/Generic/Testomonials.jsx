@@ -18,7 +18,7 @@ const Testomonials = () => {
             text: "I have been extremely happy with the results of working with the creative agency and I would highly recommend them to anyone who is looking for high-quality design and development services.",
             avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
             hasVideo: true,
-            videoThumbnail: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop"
+            videoThumbnail: "/images/travelica-vid-1.mp4"
         },
         {
             id: 2,
@@ -28,7 +28,7 @@ const Testomonials = () => {
             text: "Outstanding work! The team delivered exactly what we needed and exceeded our expectations in every way.",
             avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
             hasVideo: false,
-            videoThumbnail: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop"
+            videoThumbnail: "/images/travelica-vid-1.mp4"
         },
         {
             id: 3,
@@ -38,7 +38,7 @@ const Testomonials = () => {
             text: "Professional, creative, and reliable. They transformed our vision into reality with exceptional attention to detail.",
             avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
             hasVideo: true,
-            videoThumbnail: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop"
+            videoThumbnail: "/images/travelica-vid-1.mp4"
         },
         {
             id: 4,
@@ -48,7 +48,7 @@ const Testomonials = () => {
             text: "Excellent communication and top-notch technical skills. The project was completed on time and within budget.",
             avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
             hasVideo: false,
-            videoThumbnail: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=300&fit=crop"
+            videoThumbnail: "/images/travelica-vid-1.mp4"
         }
     ]
 
@@ -163,26 +163,26 @@ const Testomonials = () => {
                                     </div>
 
                                     {/* Video Testimonial */}
-                                    <div className="relative">
-                                        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-orange-500 to-orange-600">
-                                            <img
-                                                src={testimonial.videoThumbnail}
-                                                alt={`${testimonial.name} video testimonial`}
-                                                className="w-full h-full object-cover"
-                                            />
-                                            <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                                    <div className="relative max-h-[355px]">
+                                        <video src={testimonial?.videoThumbnail} autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} className='rounded-2xl' />
+                                        {/* <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-orange-500 to-orange-600">
+                                        <img
+                                            src={testimonial.videoThumbnail}
+                                            alt={`${testimonial.name} video testimonial`}
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
-                                            {/* Play Button */}
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <button className="bg-brand-dark rounded-full p-6 hover:bg-opacity-30 transition-all duration-300 group hover:bg-brand-orange">
-                                                    <FaPlay className="text-white text-xl group-hover:scale-110 transition-transform duration-300" />
-                                                </button>
-                                            </div>
-
-                                            <span className="absolute bottom-6 left-0 right-0 mx-auto text-xl font-semibold w-fit text-white">
-                                                {testimonial.name}
-                                            </span>
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <button className="bg-brand-dark rounded-full p-6 hover:bg-opacity-30 transition-all duration-300 group hover:bg-brand-orange">
+                                                <FaPlay className="text-white text-xl group-hover:scale-110 transition-transform duration-300" />
+                                            </button>
                                         </div>
+
+                                        <span className="absolute bottom-6 left-0 right-0 mx-auto text-xl font-semibold w-fit text-white">
+                                            {testimonial.name}
+                                        </span>
+                                    </div> */}
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { FaArrowRightLong, FaGlobe, FaRightLong } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 const WhatWeDo = () => {
     const [activeTab, setActiveTab] = useState('web-development')
@@ -15,21 +16,25 @@ const WhatWeDo = () => {
             </svg>
             ,
             services: [
-                { id: 'custom-web', name: 'Custom Web Design', icon: '🎨' },
-                { id: 'animated', name: '3d Animated', icon: '💻' },
+                { id: 'custom-web-design', name: 'Custom Web Design', icon: '🎨' },
+                { id: '3d-animated', name: '3d Animated', icon: '💻' },
                 { id: 'webflow', name: 'Webflow', icon: '⚙️' },
                 { id: 'wix', name: 'Wix', icon: '🔧' },
                 { id: 'shopify', name: 'Shopify', icon: '🔧' },
-                { id: 'e-com', name: 'E-Commerce', icon: '🔧' },
+                { id: 'e-commerce', name: 'E-Commerce', icon: '🔧' },
                 { id: 'square-space', name: 'Square Space', icon: '🔧' },
                 { id: 'wordpress', name: 'WordPress', icon: '🔧' }
 
             ],
             images: {
-                responsive: '/images/whatwe.png',
-                frontend: '/images/whatwe.png',
-                backend: '/images/whatwe.png',
-                fullstack: '/images/whatwe.png'
+                'custom-web-design': '/images/custom-development.jpg',
+                '3d-animated': '/images/animated-1.jpg',
+                'webflow': '/images/web-flow-1.jpg',
+                'wix': '/images/wix-1.jpg',
+                'shopify': '/images/shopify-1.jpg',
+                'e-commerce': '/images/ecommerce-1.jpg',
+                'square-space': '/images/space-1.jpg',
+                'wordpress': '/images/wordpress-1.jpg',
             }
         },
         'digital-marketing': {
@@ -53,10 +58,13 @@ const WhatWeDo = () => {
                 { id: 'local-seo', name: 'Local SEO', icon: '📍' }
             ],
             images: {
-                seo: '/images/whatwe.png',
-                social: '/images/whatwe.png',
-                ppc: '/images/whatwe.png',
-                content: '/images/whatwe.png'
+                'search-engine-optimization': '/images/seo2-main.png',
+                'social-media-marketing': '/images/social-1.jpg',
+                'pay-per-click-marketing': '/images/ppc-main.png',
+                'content-marketing': '/images/whatwe.png',
+                'google-merchant-advertising': '/images/gm-main.jpg',
+                'corporate-branding': '/images/cb-main.jpg',
+                'local-seo': '/images/seo-main.jpg',
             }
         },
         'software-development': {
@@ -74,10 +82,9 @@ const WhatWeDo = () => {
             ],
 
             images: {
-                custom: '/images/whatwe.png',
-                saas: '/images/whatwe.png',
-                api: '/images/whatwe.png',
-                integration: '/images/whatwe.png'
+                'custom-crm': '/images/crm-1.png',
+                'custom-erp': '/images/erp-1.png',
+                'pos-development': '/images/pos-1.png',
             }
         },
         'app-development': {
@@ -103,10 +110,10 @@ const WhatWeDo = () => {
                 { id: 'dynamic-app-development', name: 'Dynamic App Development', icon: '📲' }
             ],
             images: {
-                ios: '/images/whatwe.png',
-                android: '/images/whatwe.png',
-                static: '/images/whatwe.png',
-                dynamic: '/images/whatwe.png'
+                'ios-app-development': '/images/ios-1.png',
+                'android-app-development': '/images/android-1.png',
+                'static-app-development': '/images/static-1.jpg',
+                'dynamic-app-development': '/images/dynamic-1.jpg',
             }
         }
     }
@@ -138,6 +145,7 @@ const WhatWeDo = () => {
                             onClick={() => {
                                 setActiveTab(key)
                                 setActiveService(Object.keys(tab.images)[0])
+
                             }}
                             className={`px-6 py-2 flex gap-2 items-center rounded-full border transition-all duration-300 tab-what ${activeTab === key
                                 ? 'bg-orange-500 text-white border-orange-500 active-tab-what'
@@ -157,31 +165,32 @@ const WhatWeDo = () => {
                 <div className="relative md:block flex gap-10 flex-col">
                     <div className="what-we-services-tab">
                         {currentTab.services.map((service, index) => (
-                            <div
+                            <Link
+                                to={`/service/${activeTab}?service=${service?.id}`}
+                                target='_blank'
                                 key={service.id}
                                 onClick={() => setActiveService(service.id)}
-                                className={`flex items-center lg:gap-44 md:gap-16 gap-6 md:py-9 py-5 cursor-pointer transition-all duration-300`}
+                                className={`flex items-center lg:gap-44 md:gap-16 gap-6 md:py-9 py-5 cursor-pointer transition-all duration-300 service-in-tab`}
+                                onMouseEnter={() => { setActiveService(service?.id) }}
                             >
-                                <div className={`md:text-4xl text-2xl font-space-grotesk ${activeService === service.id ? 'text-white' : 'text-gray-900'}`}>
+                                <div className={`md:text-4xl text-2xl font-space-grotesk numb ${activeService === service.id ? 'text-white' : 'text-gray-900'}`}>
                                     {String(index + 1).padStart(2, '0')}
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className={`md:text-4xl text-xl flex items-center gap-2 font-space-grotesk ${activeService === service.id ? 'text-white' : 'text-gray-900'
+                                    <h3 className={`md:text-4xl text-xl flex items-center gap-2 font-space-grotesk serv-title ${activeService === service.id ? 'text-white' : 'text-gray-900'
                                         }`}>
                                         {service.name}
-                                        {
-                                            activeService === service.id && <span className={`ml-4 ${activeService === service.id ? 'text-white' : 'text-gray-900'}`}>
-                                                <FaArrowRightLong />
-                                            </span>
-                                        }
+                                        <span className={`ml-4`}>
+                                            <FaArrowRightLong />
+                                        </span>
                                     </h3>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
 
                     {/* Right Side - Image */}
-                    <div className="flex justify-center lg:absolute top-0 bottom-0 m-auto pt-5 right-10 max-w-[450px] md:h-[430px] md:rotate-3 aspect-square md:aspect-auto">
+                    <div className="flex justify-center lg:absolute top-0 bottom-0 m-auto pt-5 right-10 max-w-[450px] md:h-[430px] md:rotate-3 aspect-square md:aspect-auto transition-all duration-500">
                         <div className="relative">
                             <img
                                 src={currentImage}
