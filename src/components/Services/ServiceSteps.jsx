@@ -31,22 +31,27 @@ const ServiceSteps = ({ stepsData }) => {
             setActiveIndex(foundIndex);
         };
 
-        // Get the smooth scrollbar instance from the global window object
-        const scrollbarInstance = window.smoothScrollbarInstance;
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll(); // Initial check
 
-        if (scrollbarInstance) {
-            // Listen to smooth scrollbar scroll events
-            scrollbarInstance.addListener(handleScroll);
-            handleScroll(); // Initial check
+        return () => window.removeEventListener('scroll', handleScroll);
 
-            return () => scrollbarInstance.removeListener(handleScroll);
-        } else {
-            // Fallback to window scroll if smooth scrollbar is not available
-            window.addEventListener('scroll', handleScroll, { passive: true });
-            handleScroll(); // Initial check
+        // // Get the smooth scrollbar instance from the global window object
+        // const scrollbarInstance = window.smoothScrollbarInstance;
 
-            return () => window.removeEventListener('scroll', handleScroll);
-        }
+        // if (scrollbarInstance) {
+        //     // Listen to smooth scrollbar scroll events
+        //     scrollbarInstance.addListener(handleScroll);
+        //     handleScroll(); // Initial check
+
+        //     return () => scrollbarInstance.removeListener(handleScroll);
+        // } else {
+        //     // Fallback to window scroll if smooth scrollbar is not available
+        //     window.addEventListener('scroll', handleScroll, { passive: true });
+        //     handleScroll(); // Initial check
+
+        //     return () => window.removeEventListener('scroll', handleScroll);
+        // }
     }, [stepsData]);
 
     return (
