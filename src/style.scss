@@ -28,7 +28,7 @@ img {
 }
 
 .container {
-    max-width: 1320px !important;
+    max-width: 100% !important;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -915,7 +915,7 @@ p {
     border: 0;
 
     .navbar-container {
-        max-width: 1320px;
+        max-width: 100%;
         margin: 0 auto;
         border-radius: 12px;
         padding: 0 20px;
