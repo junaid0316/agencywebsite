@@ -44,7 +44,7 @@ const FAQs = () => {
 
     return (
         <div className="faqs-section">
-            <div className="container mx-auto px-4">
+            <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-8 items-start">
                     <div className="lg:col-span-1">
                         <div className="head-cont justify-start items-start text-left">

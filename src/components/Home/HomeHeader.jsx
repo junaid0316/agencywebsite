@@ -30,7 +30,7 @@ const HomeHeader = () => {
                         </div>
                         {/* Video */}
                         <div className='md:w-56 md:h-32 w-20 h-10 rounded-[50%] -ml-7'>
-                            <video src="/images/travelica-vid-1.mp4" autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '60px' }} />
+                            <video src="/videos/header-video.mp4" autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '60px' }} />
                         </div>
                     </div>
                     {/* DEVELOP Text (on top) */}

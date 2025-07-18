@@ -128,14 +128,14 @@ const Testomonials = () => {
                     {/* Navigation Arrows */}
                     <button
                         onClick={prevSlide}
-                        className="absolute md:-left-10 left-2  -translate-y-1/2 z-10 testimonial-arrow"
+                        className="absolute md:-left-10 left-2  -translate-y-1/2 z-10 custom-slick-arrow"
                     >
                         <FaArrowLeftLong />
                     </button>
 
                     <button
                         onClick={nextSlide}
-                        className="absolute md:-right-10 right-2 -translate-y-1/2 z-10 testimonial-arrow"
+                        className="absolute md:-right-10 right-2 -translate-y-1/2 z-10 custom-slick-arrow"
                     >
                         <FaArrowRightLong />
                     </button>
@@ -164,7 +164,7 @@ const Testomonials = () => {
 
                                     {/* Video Testimonial */}
                                     <div className="relative max-h-[355px]">
-                                        <video src={testimonial?.videoThumbnail} autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} className='rounded-2xl' />
+                                        <video src={'/videos/testimonial-video.mp4'} autoPlay loop muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} className='rounded-2xl' />
                                         {/* <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-orange-500 to-orange-600">
                                         <img
                                             src={testimonial.videoThumbnail}

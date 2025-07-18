@@ -1,17 +1,42 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Slider from 'react-slick'
+import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6'
 
 const SoftwareDevelopment = () => {
+    const sliderRef = useRef(null)
     const settings = {
         infinite: true,
         speed: 1200,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        variableWidth: true,
+        // variableWidth: true,
         arrows: false,
         dots: false,
-        autoplay: true,
-        autoplaySpeed: 4000
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 992, // For tablets and smaller desktops
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
+            },
+            {
+                breakpoint: 576, // For mobile devices
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
+            }
+        ]
+    };
+    const nextSlide = () => {
+        sliderRef.current?.slickNext()
+    }
+    const prevSlide = () => {
+        sliderRef.current?.slickPrev()
     }
 
     const data = [
@@ -67,8 +92,23 @@ const SoftwareDevelopment = () => {
                         From architecture to deployment, we turn complex problems into powerful digital tools. Reliable code. Seamless integration. Real-world results.
                     </p>
                 </div>
-                <div className="software-development-slider lg:my-16 my-10 w-[2490px]">
-                    <Slider {...settings}>
+                <div className="software-development-slider lg:my-16 my-10 relative">
+                    {/* Navigation Arrows */}
+                    <button
+                        onClick={prevSlide}
+                        className="absolute md:-left-12 left-2 top-[calc(50%-60px)] -translate-y-1/2 z-10 custom-slick-arrow"
+                        aria-label="Previous"
+                    >
+                        <FaArrowLeftLong />
+                    </button>
+                    <button
+                        onClick={nextSlide}
+                        className="absolute md:-right-12 right-2 top-[calc(50%-60px)] -translate-y-1/2 z-10 custom-slick-arrow"
+                        aria-label="Next"
+                    >
+                        <FaArrowRightLong />
+                    </button>
+                    <Slider ref={sliderRef} {...settings}>
                         {data.map((item, index) => (
                             <div key={index} className='px-5'>
                                 <div className='software-development-card'>
