@@ -225,8 +225,8 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-auth">
-                        <a href="/login" className="btn-orange px-5">Login</a>
-                        <a href="/register" className="btn-gray px-5">Register</a>
+                        <a href="/" className="btn-orange px-5">Login</a>
+                        <a href="/" className="btn-gray px-5">Register</a>
                     </div>
 
                     {/* Mobile menu button */}
@@ -258,8 +258,8 @@ const Navbar = () => {
                         <li><a href="/about" className={`mobile-nav-link ${isActive('/about-us') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>About Us</a></li>
                         <li><a href="/contact" className={`mobile-nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Contact Us</a></li>
                         <li className="mobile-auth">
-                            <a href="/login" className="btn btn-login" onClick={() => setIsMobileMenuOpen(false)}>Login</a>
-                            <a href="/register" className="btn btn-register" onClick={() => setIsMobileMenuOpen(false)}>Register</a>
+                            <a href="/" className="btn btn-login" onClick={() => setIsMobileMenuOpen(false)}>Login</a>
+                            <a href="/" className="btn btn-register" onClick={() => setIsMobileMenuOpen(false)}>Register</a>
                         </li>
                     </ul>
                 </div>

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Slider from 'react-slick'
 import ProjectCard from './ProjectCard'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
+import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
@@ -24,16 +25,51 @@ const Projects = ({ className, headData = {
     description: "We don't sell our digital marketing and web design services in a hit-or-miss manner. Instead, we cater to your problems through our targeted services, including:"
 }, data, showAvatars = false }) => {
 
+    const sliderRef = useRef(null)
+
     const sliderSettings = {
         infinite: true,
         speed: 1200,
-        slidesToShow: 1,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        variableWidth: true,
+        // variableWidth: true,
         arrows: false,
         dots: false,
-        autoplay: true,
-        autoplaySpeed: 4000
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 1400, // For tablets and smaller desktops
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
+            },
+            {
+                breakpoint: 992, // For tablets and smaller desktops
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
+            },
+            {
+                breakpoint: 576, // For mobile devices
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false
+                }
+            }
+        ]
+    };
+
+    const nextSlide = () => {
+        sliderRef.current?.slickNext()
+    }
+
+    const prevSlide = () => {
+        sliderRef.current?.slickPrev()
     }
 
     return (
@@ -64,8 +100,23 @@ const Projects = ({ className, headData = {
                         </div>
                     </div>
 
-                    <div className="projects-slider w-[2490px]">
-                        <Slider {...sliderSettings}>
+                    <div className="projects-slider relative">
+                        {/* Navigation Arrows */}
+                        <button
+                            onClick={prevSlide}
+                            className="absolute md:-left-12 left-2 top-[calc(50%-60px)] -translate-y-1/2 z-10 custom-slick-arrow"
+                            aria-label="Previous"
+                        >
+                            <FaArrowLeftLong />
+                        </button>
+                        <button
+                            onClick={nextSlide}
+                            className="absolute md:-right-12 right-2 top-[calc(50%-60px)] -translate-y-1/2 z-10 custom-slick-arrow"
+                            aria-label="Next"
+                        >
+                            <FaArrowRightLong />
+                        </button>
+                        <Slider ref={sliderRef} {...sliderSettings}>
                             {data?.map((project) => (
                                 <div key={project.id} className="project-slide">
                                     <ProjectCard project={project} />

@@ -131,7 +131,7 @@ const RecentWork = () => {
 
                             return (
                                 <div
-                                    className='recent-work-card'
+                                    className='recent-work-card grid-recent-work'
                                     key={index}
                                     style={{
                                         gridColumn: gridColumn,
